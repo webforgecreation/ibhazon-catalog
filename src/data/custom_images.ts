@@ -29,7 +29,7 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     "name": "Pressure Cooker",
     "category": "Home & Kitchen",
     "price": 1499,
-    "image": "https://images.unsplash.com/photo-1584990351349-a241a5a15c25?auto=format&fit=crop&w=600&h=450&q=80https://aceware.in/wp-content/uploads/2026/03/Triply-Pressure-Cooker.webp",
+    "image": "https://www.wonderchef.com/cdn/shop/files/6817756.jpg?v=1757416635&width=720",
     "description": "Heavy-duty anodized aluminum pressure cooker with triple safety protection for quick, healthy meals.",
     "specs": [
       "5-Liter Capacity",
@@ -911,7 +911,7 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     "name": "Cat Tree",
     "category": "Pet Supplies",
     "price": 5999,
-    "image": "https://ca-times.brightspotcdn.com/dims4/default/dafefb6/2147483647/strip/true/crop/2100x1500+0+0/resize/1200x857!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F3c%2F7e%2F4e4f6df3454f9b9baed0217afb5b%2Fcat-tree-hero.jpeg",
+    "image": "https://www.lordsandlabradors.co.uk/cdn/shop/files/HelsinkiPlayCentreCatScratchPost_8603d63a-27c3-4a26-9800-ca0135e93a2f.jpg?v=1698922071&width=1420",
     "description": "Multi-level large cat condo tree activity tower with sisal scratching posts.",
     "specs": [
       "Height: 55 Inches",
@@ -1891,7 +1891,7 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     "name": "Bench Vice",
     "category": "Tools & Hardware",
     "price": 2499,
-    "image": "https://images.unsplash.com/phohttps://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/R8296195-01to-1504148455328-c376907d081c?auto=format&fit=crop&w=600&h=450&q=80",
+    "image": "https://ravimachines.com/wp-content/uploads/2021/01/BENCH-VICE-100-MM-TO-250-MM.jpg",
     "description": "Heavy-duty cast steel bench vice with 360-degree swivel base rotation.",
     "specs": [
       "Jaw Width: 5 Inches (125mm)",
