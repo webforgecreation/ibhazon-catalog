@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Settings, Image, Check, AlertCircle, Copy, FileCode, Trash2, ArrowRight } from 'lucide-react';
 import { Product } from '../types';
-import { saveProductImageOverride, clearProductImageOverrides } from '../data/products';
+import { saveProductImageOverride, saveProductNameOverride, clearProductImageOverrides } from '../data/products';
 
 interface AdminPanelProps {
   products: Product[];
@@ -13,9 +13,14 @@ interface AdminPanelProps {
 export default function AdminPanel({ products, onRefreshProducts, isOpen, onClose }: AdminPanelProps) {
   const [selectedProductId, setSelectedProductId] = useState<string>('');
   const [newImageUrl, setNewImageUrl] = useState<string>('');
+  const [newProductName, setNewProductName] = useState<string>('');
   const [successMsg, setSuccessMsg] = useState<string>('');
   const [errorMsg, setErrorMsg] = useState<string>('');
   const [copiedCatalog, setCopiedCatalog] = useState(false);
+  const [copiedOverrides, setCopiedOverrides] = useState(false);
+  const [copiedNameOverrides, setCopiedNameOverrides] = useState(false);
+  const [copiedImagesSkeleton, setCopiedImagesSkeleton] = useState(false);
+  const [copiedNamesSkeleton, setCopiedNamesSkeleton] = useState(false);
 
   if (!isOpen) return null;
 
@@ -28,29 +33,48 @@ export default function AdminPanel({ products, onRefreshProducts, isOpen, onClos
       setErrorMsg('Please select a product from the list.');
       return;
     }
-    if (!newImageUrl.trim()) {
-      setErrorMsg('Please enter a valid image URL.');
+
+    const trimmedName = newProductName.trim();
+    const trimmedImage = newImageUrl.trim();
+
+    if (!trimmedName && !trimmedImage) {
+      setErrorMsg('Please enter either a product name or an image URL.');
       return;
     }
-    if (!newImageUrl.startsWith('http://') && !newImageUrl.startsWith('https://')) {
+
+    if (trimmedImage && !trimmedImage.startsWith('http://') && !trimmedImage.startsWith('https://')) {
       setErrorMsg('Image URL must start with http:// or https://');
       return;
     }
 
+    const successParts: string[] = [];
+
     // Save image
-    saveProductImageOverride(selectedProductId, newImageUrl.trim());
+    if (trimmedImage) {
+      saveProductImageOverride(selectedProductId, trimmedImage);
+      successParts.push('Image URL');
+    }
+
+    // Save name
+    if (trimmedName) {
+      saveProductNameOverride(selectedProductId, trimmedName);
+      successParts.push('Product name');
+    }
+
     onRefreshProducts();
-    setSuccessMsg('Image URL successfully updated! You will see the new image applied in the catalog immediately.');
-    setNewImageUrl('');
+    setSuccessMsg(`${successParts.join(' and ')} successfully updated! Changes are applied instantly.`);
     
     setTimeout(() => setSuccessMsg(''), 5000);
   };
 
   const handleReset = () => {
-    if (confirm('Are you sure you want to restore all 190 products to their default high-definition placeholder images?')) {
+    if (confirm('Are you sure you want to restore all 190 products to their default names and images?')) {
       clearProductImageOverrides();
       onRefreshProducts();
-      setSuccessMsg('All custom product images have been reset to defaults.');
+      setSelectedProductId('');
+      setNewImageUrl('');
+      setNewProductName('');
+      setSuccessMsg('All custom product images and names have been reset to defaults.');
       setTimeout(() => setSuccessMsg(''), 3000);
     }
   };
@@ -69,6 +93,56 @@ export default function AdminPanel({ products, onRefreshProducts, isOpen, onClos
     navigator.clipboard.writeText(JSON.stringify(minimalData, null, 2));
     setCopiedCatalog(true);
     setTimeout(() => setCopiedCatalog(false), 2000);
+  };
+
+  const handleCopyOverridesJSON = () => {
+    try {
+      const data = localStorage.getItem("ibhazon_image_overrides") || "{}";
+      navigator.clipboard.writeText(data);
+      setCopiedOverrides(true);
+      setTimeout(() => setCopiedOverrides(false), 2000);
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  const handleCopyNameOverridesJSON = () => {
+    try {
+      const data = localStorage.getItem("ibhazon_name_overrides") || "{}";
+      navigator.clipboard.writeText(data);
+      setCopiedNameOverrides(true);
+      setTimeout(() => setCopiedNameOverrides(false), 2000);
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  const handleCopyImagesSkeleton = () => {
+    try {
+      const skeleton: Record<string, string> = {};
+      products.forEach(p => {
+        skeleton[p.id] = p.image;
+      });
+      navigator.clipboard.writeText(JSON.stringify(skeleton, null, 2));
+      setCopiedImagesSkeleton(true);
+      setTimeout(() => setCopiedImagesSkeleton(false), 2000);
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  const handleCopyNamesSkeleton = () => {
+    try {
+      const skeleton: Record<string, string> = {};
+      products.forEach(p => {
+        skeleton[p.id] = p.name;
+      });
+      navigator.clipboard.writeText(JSON.stringify(skeleton, null, 2));
+      setCopiedNamesSkeleton(true);
+      setTimeout(() => setCopiedNamesSkeleton(false), 2000);
+    } catch (e) {
+      console.error(e);
+    }
   };
 
   const selectedProductObj = products.find(p => p.id === selectedProductId);
@@ -121,6 +195,7 @@ export default function AdminPanel({ products, onRefreshProducts, isOpen, onClos
                   setSelectedProductId(e.target.value);
                   const p = products.find(prod => prod.id === e.target.value);
                   setNewImageUrl(p ? p.image : '');
+                  setNewProductName(p ? p.name : '');
                 }}
                 className="w-full text-sm bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-hidden focus:ring-2 focus:ring-indigo-500 transition-all text-slate-800"
               >
@@ -151,7 +226,18 @@ export default function AdminPanel({ products, onRefreshProducts, isOpen, onClos
             )}
 
             <div className="space-y-1.5">
-              <label className="text-xs font-semibold text-slate-700 uppercase tracking-wider block">2. Paste Copied Browser Image URL</label>
+              <label className="text-xs font-semibold text-slate-700 uppercase tracking-wider block">2. Edit Product Name</label>
+              <input 
+                type="text"
+                value={newProductName}
+                onChange={(e) => setNewProductName(e.target.value)}
+                placeholder="Enter custom product name"
+                className="w-full text-xs font-medium bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-hidden focus:ring-2 focus:ring-indigo-500 transition-all text-slate-800"
+              />
+            </div>
+
+            <div className="space-y-1.5">
+              <label className="text-xs font-semibold text-slate-700 uppercase tracking-wider block">3. Paste Copied Browser Image URL</label>
               <textarea 
                 value={newImageUrl}
                 onChange={(e) => setNewImageUrl(e.target.value)}
@@ -179,7 +265,7 @@ export default function AdminPanel({ products, onRefreshProducts, isOpen, onClos
               type="submit"
               className="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-sm font-semibold transition-all flex items-center justify-center gap-2 shadow-md shadow-indigo-100 cursor-pointer active:scale-99"
             >
-              Apply Image Override
+              Apply Override Changes
               <ArrowRight className="w-4 h-4" />
             </button>
           </form>
@@ -189,45 +275,90 @@ export default function AdminPanel({ products, onRefreshProducts, isOpen, onClos
           {/* GitHub / Deployment Codes */}
           <div className="space-y-4">
             <div>
-              <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wider">GitHub, Vercel & MongoDB Deployment</h4>
+              <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wider">GitHub, Vercel & Permanent Customization</h4>
               <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                We've built a modular local-persistence architecture that mimics MongoDB perfectly for safe, fast local operations. For deployment:
+                Make your customized names and images permanent on your GitHub repository and Vercel deployment:
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-3">
-              <button
-                onClick={handleCopyFullJSON}
-                className="p-3 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-xl text-left transition-all active:scale-98"
-              >
-                <div className="flex items-center justify-between">
-                  <FileCode className="w-4 h-4 text-slate-700" />
-                  {copiedCatalog ? <span className="text-[10px] text-emerald-600 font-semibold uppercase">Copied!</span> : <span className="text-[10px] text-slate-400 font-mono">JSON</span>}
+            <div className="space-y-2.5">
+              <div className="grid grid-cols-2 gap-3">
+                <button
+                  onClick={handleCopyOverridesJSON}
+                  className="p-3 bg-indigo-50/55 hover:bg-indigo-50 border border-indigo-150 rounded-xl text-left transition-all active:scale-98 cursor-pointer"
+                >
+                  <div className="flex items-center justify-between">
+                    <FileCode className="w-4 h-4 text-indigo-600" />
+                    {copiedOverrides ? <span className="text-[10px] text-emerald-600 font-semibold uppercase">Copied Map!</span> : <span className="text-[10px] text-indigo-400 font-mono font-bold">IMAGES</span>}
+                  </div>
+                  <p className="text-xs font-semibold text-slate-800 mt-2">Export Image Overrides</p>
+                  <p className="text-[10px] text-slate-500 mt-0.5">Copy custom image mappings</p>
+                </button>
+
+                <button
+                  onClick={handleCopyNameOverridesJSON}
+                  className="p-3 bg-violet-50/55 hover:bg-violet-50 border border-violet-150 rounded-xl text-left transition-all active:scale-98 cursor-pointer"
+                >
+                  <div className="flex items-center justify-between">
+                    <FileCode className="w-4 h-4 text-violet-600" />
+                    {copiedNameOverrides ? <span className="text-[10px] text-emerald-600 font-semibold uppercase">Copied Names!</span> : <span className="text-[10px] text-violet-400 font-mono font-bold">NAMES</span>}
+                  </div>
+                  <p className="text-xs font-semibold text-slate-800 mt-2">Export Name Overrides</p>
+                  <p className="text-[10px] text-slate-500 mt-0.5">Copy custom product names</p>
+                </button>
+              </div>
+
+              {/* Bulk 190 Products Blank Template Section */}
+              <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                <h5 className="text-[10px] font-bold text-slate-700 uppercase tracking-wider">Bulk Customize all 190 Items</h5>
+                <p className="text-[10px] text-slate-500 leading-relaxed">
+                  Instead of editing items one-by-one, copy a pre-made JSON list of all 190 product IDs. You can open this list in any text editor, write all your customized product names and paste Google image links, then paste it into your code:
+                </p>
+                <div className="grid grid-cols-2 gap-2 mt-1">
+                  <button
+                    type="button"
+                    onClick={handleCopyImagesSkeleton}
+                    className="py-2 px-2.5 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-[10px] font-semibold text-slate-800 flex items-center justify-between transition-all cursor-pointer"
+                  >
+                    <span>190-Image Template</span>
+                    {copiedImagesSkeleton ? <span className="text-emerald-600 font-bold">COPIED</span> : <Copy className="w-3.5 h-3.5 text-slate-400" />}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleCopyNamesSkeleton}
+                    className="py-2 px-2.5 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-[10px] font-semibold text-slate-800 flex items-center justify-between transition-all cursor-pointer"
+                  >
+                    <span>190-Name Template</span>
+                    {copiedNamesSkeleton ? <span className="text-emerald-600 font-bold">COPIED</span> : <Copy className="w-3.5 h-3.5 text-slate-400" />}
+                  </button>
                 </div>
-                <p className="text-xs font-semibold text-slate-800 mt-2">Export Products</p>
-                <p className="text-[10px] text-slate-500 mt-0.5">Copy all 190 items configuration</p>
-              </button>
+              </div>
 
               <button
                 onClick={handleReset}
                 type="button"
-                className="p-3 bg-rose-50/50 hover:bg-rose-50 border border-rose-100 rounded-xl text-left transition-all active:scale-98"
+                className="w-full p-3 bg-rose-50/50 hover:bg-rose-50 border border-rose-100 rounded-xl text-left transition-all active:scale-98 cursor-pointer flex items-center justify-between"
               >
-                <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
                   <Trash2 className="w-4 h-4 text-rose-600" />
-                  <span className="text-[10px] text-rose-500 font-mono uppercase">Reset</span>
+                  <div>
+                    <p className="text-xs font-semibold text-rose-950">Reset All Sandbox Overrides</p>
+                    <p className="text-[10px] text-rose-500 mt-0.5">Restore all 190 items to their original default names and image placeholders</p>
+                  </div>
                 </div>
-                <p className="text-xs font-semibold text-rose-900 mt-2">Reset All Overrides</p>
-                <p className="text-[10px] text-rose-500 mt-0.5">Restore default images</p>
+                <span className="text-[10px] text-rose-500 font-mono uppercase bg-rose-100/50 px-2 py-1 rounded">Reset</span>
               </button>
             </div>
           </div>
 
-          <div className="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-1 text-xs">
-            <h5 className="font-semibold text-slate-800">Deployment Config Tips:</h5>
-            <p className="text-slate-600 leading-relaxed">
-              When committing to your <strong>GitHub repo</strong> and deploying to <strong>Vercel</strong>, all image edits you've done in this sandbox can be exported using the button above and replaced inside <code>src/data/products.ts</code> for instant production integration!
-            </p>
+          <div className="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 text-xs">
+            <h5 className="font-semibold text-slate-800">How to Save Permanently:</h5>
+            <ol className="text-slate-600 leading-relaxed list-decimal pl-4 space-y-1">
+              <li>Click <strong>"Export Image Overrides"</strong> and paste the JSON into <code>PERMANENT_IMAGE_OVERRIDES</code> inside the file <code>src/data/custom_images.ts</code>.</li>
+              <li>Click <strong>"Export Name Overrides"</strong> and paste the JSON into <code>PERMANENT_NAME_OVERRIDES</code> in the same file.</li>
+              <li>Save and commit your <code>custom_images.ts</code> to Git and push to GitHub/Vercel.</li>
+              <li>Your custom names and image links are now 100% permanent on your live web application!</li>
+            </ol>
           </div>
 
         </div>

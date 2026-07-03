@@ -1,8 +1,9 @@
 import { Product } from '../types';
+import { PERMANENT_IMAGE_OVERRIDES, PERMANENT_NAME_OVERRIDES, PERMANENT_PRODUCTS_OVERRIDE } from './custom_images';
 
 // Raw metadata for all 190 products requested by the user.
 // Prices are carefully set as round numbers ending in 9 (1 rupee less than round, min-999 to max-99999).
-export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number; unsplashId: string; description: string; specs: string[] }[] = [
+export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number; unsplashId?: string; imageUrl?: string; description: string; specs: string[] }[] = [
   // === HOME & KITCHEN (20 Items) ===
   {
     name: "Non-Stick Cookware Set",
@@ -1544,38 +1545,78 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
   }
 ];
 
-// Helper to load products, merging in any user-defined image overrides from localStorage
+// Helper to load products, merging in any user-defined image & name overrides from localStorage
 export function getProducts(): Product[] {
-  let overrides: Record<string, string> = {};
+  let imageOverrides: Record<string, string> = { ...PERMANENT_IMAGE_OVERRIDES };
+  let nameOverrides: Record<string, string> = { ...PERMANENT_NAME_OVERRIDES };
+  
   try {
-    const data = localStorage.getItem("ibhazon_image_overrides");
-    if (data) {
-      overrides = JSON.parse(data);
+    const imgData = localStorage.getItem("ibhazon_image_overrides");
+    if (imgData) {
+      imageOverrides = { ...imageOverrides, ...JSON.parse(imgData) };
     }
   } catch (e) {
     console.error("Error loading image overrides from localStorage", e);
   }
 
-  return RAW_PRODUCTS_DATA.map((p, idx) => {
-    const id = `${p.category.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")}-${idx + 1}`;
-    // Use override image if exists, otherwise generate the Unsplash URL
-    const image = overrides[id] || `https://images.unsplash.com/${p.unsplashId}?auto=format&fit=crop&w=600&h=450&q=80`;
-    
-    // Set a few products as featured
-    const isFeatured = idx % 19 === 0;
+  try {
+    const nameData = localStorage.getItem("ibhazon_name_overrides");
+    if (nameData) {
+      nameOverrides = { ...nameOverrides, ...JSON.parse(nameData) };
+    }
+  } catch (e) {
+    console.error("Error loading name overrides from localStorage", e);
+  }
 
+  let baseProducts: Product[] = [];
+
+  if (PERMANENT_PRODUCTS_OVERRIDE && Array.isArray(PERMANENT_PRODUCTS_OVERRIDE) && PERMANENT_PRODUCTS_OVERRIDE.length > 0) {
+    baseProducts = PERMANENT_PRODUCTS_OVERRIDE.map((p, idx) => {
+      const id = p.id || `${(p.category || "").toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")}-${idx + 1}`;
+      return {
+        id,
+        name: p.name || "",
+        category: p.category || "General",
+        price: Number(p.price) || 0,
+        rating: p.rating !== undefined ? parseFloat(String(p.rating)) : parseFloat((4.2 + (idx % 8) * 0.1).toFixed(1)),
+        reviewsCount: p.reviewsCount !== undefined ? Number(p.reviewsCount) : 15 + (idx % 12) * 23,
+        description: p.description || "",
+        specs: Array.isArray(p.specs) ? p.specs : [],
+        image: p.image || p.imageUrl || "",
+        isFeatured: p.isFeatured !== undefined ? !!p.isFeatured : idx % 19 === 0,
+        stock: p.stock !== undefined ? Number(p.stock) : 5 + (idx % 15)
+      };
+    });
+  } else {
+    baseProducts = RAW_PRODUCTS_DATA.map((p, idx) => {
+      const id = `${p.category.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")}-${idx + 1}`;
+      // Use override image if exists, or direct imageUrl if defined, otherwise generate the Unsplash URL
+      const image = p.imageUrl || (p.unsplashId ? `https://images.unsplash.com/${p.unsplashId}?auto=format&fit=crop&w=600&h=450&q=80` : '');
+      
+      return {
+        id,
+        name: p.name,
+        category: p.category,
+        price: p.price,
+        rating: parseFloat((4.2 + (idx % 8) * 0.1).toFixed(1)), // Ratings 4.2 to 4.9
+        reviewsCount: 15 + (idx % 12) * 23,
+        description: p.description,
+        specs: p.specs,
+        image,
+        isFeatured: idx % 19 === 0,
+        stock: 5 + (idx % 15)
+      };
+    });
+  }
+
+  // Overlay any active sandbox/localStorage edits or custom_images file overrides on top of either base catalog
+  return baseProducts.map((p) => {
+    const imgOverride = imageOverrides[p.id];
+    const nameOverride = nameOverrides[p.id];
     return {
-      id,
-      name: p.name,
-      category: p.category,
-      price: p.price,
-      rating: parseFloat((4.2 + (idx % 8) * 0.1).toFixed(1)), // Ratings 4.2 to 4.9
-      reviewsCount: 15 + (idx % 12) * 23,
-      description: p.description,
-      specs: p.specs,
-      image,
-      isFeatured,
-      stock: 5 + (idx % 15)
+      ...p,
+      image: imgOverride || p.image,
+      name: nameOverride || p.name
     };
   });
 }
@@ -1594,11 +1635,26 @@ export function saveProductImageOverride(id: string, imageUrl: string): void {
   }
 }
 
+export function saveProductNameOverride(id: string, name: string): void {
+  try {
+    const data = localStorage.getItem("ibhazon_name_overrides");
+    let overrides: Record<string, string> = {};
+    if (data) {
+      overrides = JSON.parse(data);
+    }
+    overrides[id] = name;
+    localStorage.setItem("ibhazon_name_overrides", JSON.stringify(overrides));
+  } catch (e) {
+    console.error("Error saving name override to localStorage", e);
+  }
+}
+
 export function clearProductImageOverrides(): void {
   try {
     localStorage.removeItem("ibhazon_image_overrides");
+    localStorage.removeItem("ibhazon_name_overrides");
   } catch (e) {
-    console.error("Error clearing image overrides", e);
+    console.error("Error clearing image and name overrides", e);
   }
 }
 
