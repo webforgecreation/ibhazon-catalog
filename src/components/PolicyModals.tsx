@@ -3,7 +3,7 @@ import { X, Shield, RefreshCw, FileText } from 'lucide-react';
 
 interface PolicyModalProps {
   isOpen: boolean;
-  type: 'privacy' | 'refund' | 'terms' | 'Shipment Policy' | null;
+  type: 'privacy' | 'refund' | 'terms' | 'ShipmentPolicy' | null;
   onClose: () => void;
 }
 

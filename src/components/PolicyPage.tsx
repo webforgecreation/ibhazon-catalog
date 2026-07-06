@@ -2,7 +2,7 @@ import React from 'react';
 import { Shield, RefreshCw, FileText, ArrowLeft, Landmark, Mail, Phone, Calendar } from 'lucide-react';
 
 interface PolicyPageProps {
-  type: 'privacy' | 'refund' | 'terms' | 'Shipment Policy';
+  type: 'privacy' | 'refund' | 'terms' | 'ShipmentPolicy';
   onBack: () => void;
 }
 
