@@ -79,7 +79,7 @@ export default function PolicyModals({ isOpen, type, onClose }: PolicyModalProps
           body: "Any legal claims, discrepancies, or transactional disputes arising from purchasing on IBHAZON are governed by corporate business laws and fall under the exclusive jurisdiction of the courts in Hyderabad, Telangana, India."
         }
       ]
-    }
+    },
     Shipment Policy: {
       title: "Shipment Policy",
       icon: <FileText className="w-6 h-6 text-indigo-600" />,
