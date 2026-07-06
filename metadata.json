@@ -1,6 +1,6 @@
 {
   "name": "IBHAZON",
-  "description": "High-quality home & kitchen, garden, farming equipment, pet supplies, furniture, fitness gear, tools, lighting, and bathroom essentials from IBHA FINTECH PVT LTD.",
+  "description": "High-quality home & kitchen, garden, farming equipment, pet supplies, furniture, fitness gear, tools, lighting, and bathroom essentials from IBHAFINTECH PVT LTD.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

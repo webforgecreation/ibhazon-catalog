@@ -18,7 +18,7 @@ export default function PolicyModals({ isOpen, type, onClose }: PolicyModalProps
       sections: [
         {
           heading: "1. Information We Collect",
-          body: "IBHA FINTECH PVT LTD (\"we\", \"us\", or \"our\") operates IBHAZON. We collect personal information you provide directly to us when purchasing, creating an account, or communicating with customer support. This includes name, billing address, shipping address, email address, telephone number, and payment credentials processed securely via our encrypted gateways."
+          body: "IBHAFINTECH PVT LTD (\"we\", \"us\", or \"our\") operates IBHAZON. We collect personal information you provide directly to us when purchasing, creating an account, or communicating with customer support. This includes name, billing address, shipping address, email address, telephone number, and payment credentials processed securely via our encrypted gateways."
         },
         {
           heading: "2. How We Use Your Data",
@@ -68,7 +68,7 @@ export default function PolicyModals({ isOpen, type, onClose }: PolicyModalProps
         },
         {
           heading: "2. Intellectual Property Rights",
-          body: "All web styles, catalog lists, custom codebases, vector illustrations, and graphic assets are the exclusive intellectual properties of IBHA FINTECH PVT LTD. Unauthorized duplication or framing of these materials is strictly prohibited."
+          body: "All web styles, catalog lists, custom codebases, vector illustrations, and graphic assets are the exclusive intellectual properties of IBHAFINTECH PVT LTD. Unauthorized duplication or framing of these materials is strictly prohibited."
         },
         {
           heading: "3. Product Descriptions & Pricing accuracy",
@@ -105,7 +105,7 @@ export default function PolicyModals({ isOpen, type, onClose }: PolicyModalProps
         {/* Scrollable Body */}
         <div className="p-6 overflow-y-auto space-y-6">
           <p className="text-sm text-slate-600 leading-relaxed">
-            Welcome to <strong>IBHAZON</strong>, a high-quality online consumer portal proudly operated and managed by <strong>IBHA FINTECH PVT LTD</strong>. Please read this documentation carefully to understand our corporate legal frameworks.
+            Welcome to <strong>IBHAZON</strong>, a high-quality online consumer portal proudly operated and managed by <strong>IBHAFINTECH PVT LTD</strong>. Please read this documentation carefully to understand our corporate legal frameworks.
           </p>
 
           {content.sections.map((sec, i) => (

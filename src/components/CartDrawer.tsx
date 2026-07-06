@@ -121,7 +121,7 @@ export default function CartDrawer({
                 {remaining > 0 ? (
                   <>Add <strong className="text-indigo-600">₹{remaining.toLocaleString('en-IN')}</strong> more to your cart to qualify for <strong>FREE Premium Home Delivery</strong>!</>
                 ) : (
-                  <>Congratulations! Your order is eligible for <strong className="text-emerald-600 uppercase">FREE Express Hand-Delivery</strong> via IBHA Logistics.</>
+                  <>Congratulations! Your order is eligible for <strong className="text-emerald-600 uppercase">FREE Express Hand-Delivery</strong> via IBHAFINTECH Logistics.</>
                 )}
               </p>
             </div>

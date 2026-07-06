@@ -16,7 +16,7 @@ export default function Footer({ onOpenPolicy }: FooterProps) {
           <div>
             <h4 className="font-semibold text-slate-200">Corporate Backing</h4>
             <p className="text-[11px] text-slate-500 mt-1 leading-relaxed">
-              IBHAZON is a registered proprietary consumer service owned and powered exclusively by <strong>IBHA FINTECH PVT LTD</strong>.
+              IBHAZON is a registered proprietary consumer service owned and powered exclusively by <strong>IBHAFINTECH PVT LTD</strong>.
             </p>
           </div>
         </div>

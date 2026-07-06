@@ -113,7 +113,7 @@ export default function PolicyPage({ type, onBack }: PolicyPageProps) {
             </div>
           </div>
           <p className="text-slate-300 text-sm md:text-base max-w-2xl leading-relaxed">
-            {content.subtitle}. Please review this legal framework of IBHAZON carefully to understand our secure transactional environment operated by <strong>IBHA PVT LTD</strong>.
+            {content.subtitle}. Please review this legal framework of IBHAZON carefully to understand our secure transactional environment operated by <strong>IBHAFINTECH PVT LTD</strong>.
           </p>
         </div>
       </div>
@@ -146,9 +146,9 @@ export default function PolicyPage({ type, onBack }: PolicyPageProps) {
             
             <div className="text-xs text-slate-600 space-y-3">
               <p className="leading-relaxed">
-                <strong>IBHA PVT LTD</strong><br />
-                Level 5, Corporate Towers, HITEC City,<br />
-                Hyderabad, Telangana - 500081<br />
+                <strong>IBHAFINTECH PVT LTD</strong><br />
+                11-5-285, HP ROAD, BHAVANI NAGAR,MOOSAPET,<br />
+                Hyderabad, Telangana - 500018<br />
                 India
               </p>
               

@@ -160,7 +160,7 @@ export default function CheckoutPage({
               <span className="text-[10px] uppercase font-mono tracking-widest text-emerald-600 font-bold">Transaction Secured & Approved</span>
               <h2 className="text-2xl font-display font-black text-slate-900">Thank you for your Order!</h2>
               <p className="text-xs text-slate-500 max-w-md mx-auto leading-relaxed">
-                Your payment was processed successfully. A detailed invoice has been generated. Your shipment is handled by <strong>IBHA FINTECH PVT LTD</strong>.
+                Your payment was processed successfully. A detailed invoice has been generated. Your shipment is handled by <strong>IBHAFINTECH PVT LTD</strong>.
               </p>
             </div>
 
@@ -186,7 +186,7 @@ export default function CheckoutPage({
             <div className="flex justify-between items-start border-b border-slate-100 pb-6">
               <div>
                 <h3 className="text-xl font-display font-extrabold text-slate-950 tracking-tight">IBHAZON INVOICE</h3>
-                <p className="text-xs text-slate-400 font-mono mt-0.5">Operated by IBHA FINTECH PVT LTD</p>
+                <p className="text-xs text-slate-400 font-mono mt-0.5">Operated by IBHAFINTECH PVT LTD</p>
               </div>
               <div className="text-right text-xs space-y-0.5">
                 <p className="font-bold text-slate-800">TAX INVOICE</p>
@@ -205,9 +205,9 @@ export default function CheckoutPage({
               </div>
               <div className="text-right">
                 <p className="font-bold text-slate-800 uppercase tracking-wider text-[10px] mb-1 text-slate-400">Corporate Details</p>
-                <p className="font-semibold text-slate-800 text-sm">IBHA FINTECH PVT LTD</p>
-                <p className="text-slate-500 mt-0.5">Fintech Hub, HITEC City</p>
-                <p className="text-slate-500">Hyderabad, Telangana - 500081</p>
+                <p className="font-semibold text-slate-800 text-sm">IBHAFINTECH PVT LTD</p>
+                <p className="text-slate-500 mt-0.5">11-5-285, HP ROAD, BHAVANI NAGAR, MOOSAPET</p>
+                <p className="text-slate-500">Hyderabad, Telangana - 500018</p>
                 <p className="text-slate-500 font-mono mt-1">Support: ibhafintech@gmail.com</p>
               </div>
             </div>
@@ -306,7 +306,7 @@ export default function CheckoutPage({
             </button>
             <div>
               <h2 className="text-lg font-display font-bold text-slate-950 tracking-tight">Secure Shipping Checkout</h2>
-              <p className="text-xs text-slate-400">Fully encrypted checkout powered by IBHA FINTECH</p>
+              <p className="text-xs text-slate-400">Fully encrypted checkout powered by IBHAFINTECH</p>
             </div>
           </div>
 
@@ -495,7 +495,7 @@ export default function CheckoutPage({
                 <div>
                   <p className="font-semibold text-emerald-950">100% Secure Transacting Guarantee</p>
                   <p className="text-[10px] text-emerald-900/80 leading-relaxed mt-0.5">
-                    Your transactions are routed securely via 256-bit SSL financial bridges maintained directly under parent corporate division <strong>IBHA FINTECH PVT LTD</strong>.
+                    Your transactions are routed securely via 256-bit SSL financial bridges maintained directly under parent corporate division <strong>IBHAFINTECH PVT LTD</strong>.
                   </p>
                 </div>
               </div>

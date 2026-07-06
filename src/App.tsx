@@ -449,7 +449,7 @@ export default function App() {
                       
                       <button 
                         onClick={() => {
-                          alert("IBHA FINTECH support is active 24/7. Call us at +91 91000 94484 or email ibhafintech@gmail.com. We generate legal GST invoices instantly.");
+                          alert("IBHAFINTECH support is active 24/7. Call us at +91 91000 94484 or email ibhafintech@gmail.com. We generate legal GST invoices instantly.");
                         }}
                         className="px-4 py-3 bg-white/5 hover:bg-white/10 text-white border border-white/10 text-xs font-bold rounded-xl transition-all cursor-pointer hover:border-white/20"
                       >
@@ -460,7 +460,7 @@ export default function App() {
 
                   {/* Right Hero side promo block */}
                   <div className="hidden md:col-span-4 bg-slate-900/45 border border-white/10 p-6 rounded-2xl backdrop-blur-md space-y-4">
-                    <h4 className="text-[10px] font-bold tracking-widest uppercase text-indigo-400 font-mono">IBHA FINTECH GUARANTEES</h4>
+                    <h4 className="text-[10px] font-bold tracking-widest uppercase text-indigo-400 font-mono">IBHAFINTECH GUARANTEES</h4>
                     
                     <div className="space-y-3 text-xs text-slate-300">
                       <div className="flex items-start gap-2.5">
@@ -749,7 +749,7 @@ export default function App() {
 
                 <div className="max-w-xl space-y-4 relative z-10">
                   <span className="text-[10px] font-mono font-bold uppercase text-indigo-400 tracking-widest block">TRUSTED BY OVER 15,000+ CUSTOMERS</span>
-                  <h3 className="text-2xl font-display font-extrabold tracking-tight">Parent Corporate Division: IBHA FINTECH PVT LTD</h3>
+                  <h3 className="text-2xl font-display font-extrabold tracking-tight">Parent Corporate Division: IBHAFINTECH PVT LTD</h3>
                   <p className="text-xs text-slate-300 leading-relaxed">
                     IBHAZON is built directly on parent transaction frameworks. That means absolute transparency, RBI-level secure checkouts, automated invoice tax generation, and zero third-party processing delays.
                   </p>

@@ -173,7 +173,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess, initialTab 
 
             <div className="space-y-4">
               <p className="text-xs text-slate-300 leading-relaxed">
-                Welcome to the digital procurement gate of IBHA PRIVATE LIMITED. Please select your gateway to resume authenticated sessions, track logistics transits, or manage catalogue inventories.
+                Welcome to the digital procurement gate of IBHAFINTECH PRIVATE LIMITED. Please select your gateway to resume authenticated sessions, track logistics transits, or manage catalogue inventories.
               </p>
             </div>
           </div>
@@ -186,7 +186,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess, initialTab 
               </div>
               <div>
                 <h4 className="text-[11px] font-bold tracking-wider uppercase text-slate-200">Corporate Backing</h4>
-                <p className="text-[10px] text-slate-400">Backed by IBHA PVT LTD.</p>
+                <p className="text-[10px] text-slate-400">Backed by IBHAFINTECH PVT LTD.</p>
               </div>
             </div>
 
@@ -457,7 +457,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess, initialTab 
 
           {/* Prompt info */}
           <div className="text-[10px] text-slate-400 text-center mt-6 pt-4 border-t border-slate-100">
-            Secure processing provided by Ibha Private Limited © 2026.
+            Secure processing provided by IbhaFINTECH Private Limited © 2026.
           </div>
         </div>
       </motion.div>

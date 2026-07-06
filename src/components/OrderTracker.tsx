@@ -141,7 +141,7 @@ export default function OrderTracker({ orders, onBack }: OrderTrackerProps) {
             <ArrowLeft className="w-4 h-4" />
             Back to Catalog
           </button>
-          <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest">IBHA FINTECH Logistics Core</span>
+          <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest">IBHAFINTECH Logistics Core</span>
         </div>
 
         {/* Search Header card */}
@@ -270,7 +270,7 @@ export default function OrderTracker({ orders, onBack }: OrderTrackerProps) {
               <div className="space-y-3">
                 <p className="font-bold text-slate-800 uppercase tracking-widest text-[9px] text-slate-400">Logistical Dispatch Details</p>
                 <div className="space-y-1.5 font-mono">
-                  <p className="text-slate-500">Logistics Vendor: <span className="font-bold text-slate-700">IBHA Logistics Pvt Ltd</span></p>
+                  <p className="text-slate-500">Logistics Vendor: <span className="font-bold text-slate-700">IBHAFINTECH Logistics Pvt Ltd</span></p>
                   <p className="text-slate-500">Waybill Air Tracking Code: <span className="font-bold text-indigo-600">{searchedOrder.trackingNumber}</span></p>
                   <p className="text-slate-500">Method: <span className="font-bold text-slate-700">Surface Express Standard Delivery</span></p>
                 </div>
@@ -290,7 +290,7 @@ export default function OrderTracker({ orders, onBack }: OrderTrackerProps) {
             <div className="p-4 bg-indigo-50 border border-indigo-100 rounded-2xl flex items-center justify-between text-xs text-indigo-950">
               <div className="flex items-center gap-2.5">
                 <HelpCircle className="w-5 h-5 text-indigo-600 shrink-0" />
-                <span>Having trouble tracking or delays? Reach IBHA FINTECH Logistics directly.</span>
+                <span>Having trouble tracking or delays? Reach IBHAFINTECH Logistics directly.</span>
               </div>
               <a 
                 href="tel:9100094484"
