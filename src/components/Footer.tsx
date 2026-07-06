@@ -98,7 +98,7 @@ export default function Footer({ onOpenPolicy }: FooterProps) {
             </li>
             <li>
               <a 
-                href="#/refund"
+                href="#/Shipment Policy"
                 className="text-slate-400 hover:text-white hover:underline transition-colors block py-0.5"
               >
                 Shipment Policy
