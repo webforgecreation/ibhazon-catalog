@@ -111,9 +111,9 @@ export default function Footer({ onOpenPolicy }: FooterProps) {
         <div className="space-y-3">
           <h4 className="text-xs font-bold text-slate-200 uppercase tracking-widest">Corporate Address</h4>
           <p className="text-[11px] text-slate-400 leading-relaxed">
-            <strong>IBHA PVT LTD</strong><br />
-            Level 5, Corporate Towers, HITEC City,<br />
-            Hyderabad, Telangana - 500081<br />
+            <strong>IBHAFINTECH PVT LTD</strong><br />
+            11-5-285,HP ROAD,BHAVANI NAGAR, MOOSAPET,<br />
+            Hyderabad, Telangana - 500018<br />
             India
           </p>
           <div className="flex items-center gap-4 text-xs font-semibold text-slate-300 pt-1">
@@ -133,11 +133,11 @@ export default function Footer({ onOpenPolicy }: FooterProps) {
       {/* Copyright Bar */}
       <div className="bg-slate-950 py-6 text-slate-500 text-[10px] border-t border-slate-900">
         <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p>© 2026 IBHA PVT LTD. All Corporate Rights Reserved.</p>
+          <p>© 2026 IBHAFINTECH PVT LTD. All Corporate Rights Reserved.</p>
           <div className="flex items-center gap-1 text-[9px] text-slate-600 font-mono">
-            <span>Powered securely via IBHA Payment Services</span>
+            <span>Powered securely via IBHAFINTECH Payment Services</span>
             <span className="text-slate-800">•</span>
-            <span>CIN: U72200TG2026PTC123456</span>
+            <span>CIN: U63990TS2026PTC215877</span>
           </div>
         </div>
       </div>
