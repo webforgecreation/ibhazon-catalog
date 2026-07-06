@@ -121,11 +121,11 @@ export default function App() {
   const [authInitialTab, setAuthInitialTab] = useState<'customer' | 'admin'>('customer');
   
   // Navigation & Modal triggers
-  const [activeView, setActiveView] = useState<'shop' | 'checkout' | 'tracker' | 'privacy' | 'refund' | 'terms'>('shop');
+  const [activeView, setActiveView] = useState<'shop' | 'checkout' | 'tracker' | 'privacy' | 'refund' | 'terms' | 'shipment'>('shop');
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isAdminOpen, setIsAdminOpen] = useState(false);
-  const [policyType, setPolicyType] = useState<'privacy' | 'refund' | 'terms' | null>(null);
+  const [policyType, setPolicyType] = useState<'privacy' | 'refund' | 'terms' | 'shipment' | null>(null);
   
   // Custom interactive image override toggle
   const [adminMode, setAdminMode] = useState(false);
@@ -208,17 +208,25 @@ export default function App() {
     const handleHashChange = () => {
       const hash = window.location.hash;
       if (hash === '#/privacy' || hash === '#privacy') {
-        setActiveView('privacy');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+      setActiveView('privacy');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
       } else if (hash === '#/refund' || hash === '#refund') {
-        setActiveView('refund');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+         setActiveView('refund');
+         window.scrollTo({ top: 0, behavior: 'smooth' });
+
       } else if (hash === '#/terms' || hash === '#terms') {
         setActiveView('terms');
         window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      } else if (hash === '#/shipment' || hash === '#shipment') {
+        setActiveView('shipment');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
       } else if (hash === '#/checkout' || hash === '#checkout') {
         setActiveView('checkout');
         window.scrollTo({ top: 0, behavior: 'smooth' });
+
       } else if (hash === '#/tracker' || hash === '#tracker') {
         setActiveView('tracker');
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -233,7 +241,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const validViews = ['checkout', 'tracker', 'privacy', 'refund', 'terms'];
+    const validViews = ['checkout', 'tracker', 'privacy', 'refund', 'terms', 'shipment'];
     if (validViews.includes(activeView)) {
       if (window.location.hash !== `#/${activeView}`) {
         window.location.hash = `#/${activeView}`;

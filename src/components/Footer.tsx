@@ -2,7 +2,7 @@ import React from 'react';
 import { Mail, Phone, Landmark, ShieldCheck, Heart } from 'lucide-react';
 
 interface FooterProps {
-  onOpenPolicy: (type: 'privacy' | 'refund' | 'terms') => void;
+  onOpenPolicy: (type: 'privacy' | 'refund' | 'terms' | 'shipment') => void;
 }
 
 export default function Footer({ onOpenPolicy }: FooterProps) {
@@ -98,7 +98,7 @@ export default function Footer({ onOpenPolicy }: FooterProps) {
             </li>
             <li>
               <a 
-                href="#/Shipment Policy"
+                href="#/shipment"
                 className="text-slate-400 hover:text-white hover:underline transition-colors block py-0.5"
               >
                 Shipment Policy

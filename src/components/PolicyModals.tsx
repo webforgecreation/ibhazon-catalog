@@ -3,7 +3,7 @@ import { X, Shield, RefreshCw, FileText } from 'lucide-react';
 
 interface PolicyModalProps {
   isOpen: boolean;
-  type: 'privacy' | 'refund' | 'terms' | 'ShipmentPolicy' | null;
+  type: 'privacy' | 'refund' | 'terms' | 'shipment' | null;
   onClose: () => void;
 }
 
@@ -80,7 +80,7 @@ export default function PolicyModals({ isOpen, type, onClose }: PolicyModalProps
         }
       ]
     },
-    Shipment Policy: {
+    shipment: {
       title: "Shipment Policy",
       icon: <FileText className="w-6 h-6 text-indigo-600" />,
       updated: "Last updated: July 2, 2026",

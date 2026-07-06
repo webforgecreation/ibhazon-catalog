@@ -2,7 +2,7 @@ import React from 'react';
 import { Shield, RefreshCw, FileText, ArrowLeft, Landmark, Mail, Phone, Calendar } from 'lucide-react';
 
 interface PolicyPageProps {
-  type: 'privacy' | 'refund' | 'terms' | 'ShipmentPolicy';
+  type: 'privacy' | 'refund' | 'terms' | 'shipment';
   onBack: () => void;
 }
 
@@ -80,7 +80,7 @@ export default function PolicyPage({ type, onBack }: PolicyPageProps) {
         }
       ]
     },
-    Shipment Policy: {
+    shipment: {
       title: "Shipment Policy",
       subtitle: "Rules, guidelines, and agreements governing your use of IBHAZON",
       icon: <FileText className="w-8 h-8 text-indigo-500" />,
