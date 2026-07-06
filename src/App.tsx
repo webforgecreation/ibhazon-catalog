@@ -807,7 +807,7 @@ export default function App() {
           </motion.div>
         )}
 
-        {(activeView === 'privacy' || activeView === 'refund' || activeView === 'terms') && (
+        {(activeView === 'privacy' || activeView === 'refund' || activeView === 'terms' ||activeView === 'shipment' ) && (
           <motion.div
             key="policy-view"
             initial={{ opacity: 0 }}
