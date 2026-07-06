@@ -79,7 +79,7 @@ export default function PolicyPage({ type, onBack }: PolicyPageProps) {
           body: "Any legal claims, discrepancies, or transactional disputes arising from purchasing on IBHAZON are governed by corporate business laws and fall under the exclusive jurisdiction of the courts in Hyderabad, Telangana, India."
         }
       ]
-    }
+    },
     Shipment Policy: {
       title: "Shipment Policy",
       subtitle: "Rules, guidelines, and agreements governing your use of IBHAZON",
