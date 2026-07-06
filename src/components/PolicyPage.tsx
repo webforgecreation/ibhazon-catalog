@@ -2,7 +2,7 @@ import React from 'react';
 import { Shield, RefreshCw, FileText, ArrowLeft, Landmark, Mail, Phone, Calendar } from 'lucide-react';
 
 interface PolicyPageProps {
-  type: 'privacy' | 'refund' | 'terms';
+  type: 'privacy' | 'refund' | 'terms' | 'Shipment Policy';
   onBack: () => void;
 }
 
@@ -16,7 +16,7 @@ export default function PolicyPage({ type, onBack }: PolicyPageProps) {
       sections: [
         {
           heading: "1. Information We Collect",
-          body: "IBHA PVT LTD (\"we\", \"us\", or \"our\") operates IBHAZON. We collect personal information you provide directly to us when purchasing, creating an account, or communicating with customer support. This includes name, billing address, shipping address, email address, telephone number, and payment credentials processed securely via our encrypted gateways."
+          body: "IBHAFINTECh PVT LTD (\"we\", \"us\", or \"our\") operates IBHAZON. We collect personal information you provide directly to us when purchasing, creating an account, or communicating with customer support. This includes name, billing address, shipping address, email address, telephone number, and payment credentials processed securely via our encrypted gateways."
         },
         {
           heading: "2. How We Use Your Data",
@@ -77,6 +77,30 @@ export default function PolicyPage({ type, onBack }: PolicyPageProps) {
         {
           heading: "4. Dispute Resolution & Jurisdiction",
           body: "Any legal claims, discrepancies, or transactional disputes arising from purchasing on IBHAZON are governed by corporate business laws and fall under the exclusive jurisdiction of the courts in Hyderabad, Telangana, India."
+        }
+      ]
+    }
+    Shipment Policy: {
+      title: "Shipment Policy",
+      subtitle: "Rules, guidelines, and agreements governing your use of IBHAZON",
+      icon: <FileText className="w-8 h-8 text-indigo-500" />,
+      updated: "Last updated: July 2, 2026",
+      sections: [
+         {
+          heading: "1. Order Processing",
+          body: "All orders are processed within 1–3 business days after successful payment confirmation. Orders placed on weekends or public holidays will be processed on the next business day. If there is any delay due to high order volume or unforeseen circumstances, customers will be informed via email or phone."
+        },
+        {
+          heading: "2. Shipping Time",
+          body: "Estimated delivery times are: Local Deliveries: 2–5 business days, Domestic Deliveries (within India): 3–7 business days, Remote Locations: 5–10 business days, Delivery times are estimates and may vary due to weather conditions, courier delays, natural disasters, or other factors beyond our control. "
+        },
+        {
+          heading: "3. Shipping Charges & Courier Partners",
+          body: "Shipping charges, if applicable, will be displayed during checkout, Free shipping may be available on selected products or orders above a specified purchase value, Additional shipping charges may apply for remote or special delivery locations, Orders are shipped through trusted courier partners to ensure safe and timely delivery. The courier service may vary depending on the customer's location."
+        },
+        {
+          heading: "4. Damaged or Missing Items",
+          body: "If your package arrives damaged or any items are missing : , Notify us within 48 hours of receiving the order, Share clear photographs of the package and products, We will investigate the issue and provide an appropriate resolution."
         }
       ]
     }

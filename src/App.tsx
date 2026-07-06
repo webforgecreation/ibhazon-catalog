@@ -863,7 +863,7 @@ export default function App() {
         )}
       </AnimatePresence>
 
-      {/* Policy Modals Overlay (Privacy, Refund, Terms) */}
+      {/* Policy Modals Overlay (Privacy, Refund, Terms,Shipment Policy) */}
       <PolicyModals 
         isOpen={!!policyType}
         type={policyType}
