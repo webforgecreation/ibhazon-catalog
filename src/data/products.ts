@@ -428,7 +428,7 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
   {
     name: "Grain Thresher",
     category: "Farming Equipment",
-    price: 54999,
+    price: 35699,
     unsplashId: "photo-1574323347407-f5e1ad6d020b",
     description: "High-efficiency mechanized crop grain thresher machine for wheat, paddy, and legumes.",
     specs: ["5HP Motor or PTO Operated", "Self-Cleaning Sieve Vibrators", "Blower Separation Fan System", "Processing Rate: 500kg/hour"]
@@ -436,7 +436,7 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
   {
     name: "Mini Tractor",
     category: "Farming Equipment",
-    price: 98999,
+    price: 78659,
     unsplashId: "photo-1530906358829-e84b2769270f",
     description: "Compact 15HP mini farm tractor designed for narrow orchards, vineyards, and light haulage.",
     specs: ["15HP Single Cylinder Diesel Engine", "6 Forward + 2 Reverse Gearbox", "Category-1 3-Point Hydraulic Hitch", "Power Take-Off (PTO) Speed: 540 RPM"]
@@ -664,7 +664,7 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
   {
     name: "L-Shaped Sofa",
     category: "Furniture",
-    price: 48999,
+    price: 23699,
     unsplashId: "photo-1555041469-a586c61ea9bc",
     description: "Luxurious corner L-shaped sectional sofa with reversible chaise and soft velvet upholstery.",
     specs: ["Seating Capacity: 5 Adults", "Premium Deep Navy Blue Velvet", "Pocket Spring Cushion Base Comfort", "Solid Pine Wood Leg Support Units"]
@@ -808,7 +808,7 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
   {
     name: "Modular Wardrobe",
     category: "Furniture",
-    price: 59999,
+    price: 46899,
     unsplashId: "photo-1558882224-cca166733360",
     description: "Luxe walk-in modular sliding door wardrobe cabinet customized storage shelves.",
     specs: ["Anti-Jump Smooth Sliding Doors", "Fenix Scratch-Resistant Matte Finish", "12 Shelving Dividers & 4 Large Drawers", "Built-In Motion Sensor LED Wardrobe Lights"]
@@ -874,7 +874,7 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
   {
     name: "Smith Machine",
     category: "Gym & Fitness",
-    price: 59999,
+    price: 25699,
     unsplashId: "photo-1540206276907-fbd7c1aa2959",
     description: "Commercial-grade linear-bearing smooth glide smith machine squat press bar system.",
     specs: ["Self-Balancing 20kg Guided Barbell", "12 Height Lock-out Safety Pegs", "Dual Weight Storage Horn Posts", "Hardened Steel Linear Bearings Rollers"]
@@ -882,7 +882,7 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
   {
     name: "Leg Press",
     category: "Gym & Fitness",
-    price: 45999,
+    price: 19899,
     unsplashId: "photo-1540206276907-fbd7c1aa2959",
     description: "Heavy-duty commercial hack squat and linear leg press dual-purpose machine.",
     specs: ["Load Capacity: Up to 500kg", "Thick Dual-Angle Adjustable Backrest", "Oversized Solid Steel Anti-Slip Footplate", "Heavy Quad Linear Guide Rod Rollers"]
