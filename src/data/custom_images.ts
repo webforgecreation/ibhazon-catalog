@@ -756,7 +756,7 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     "id": "farming-equipment-54",
     "name": "Mini Tractor",
     "category": "Farming Equipment",
-    "price": 98999,
+    "price": 75899,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXPPDzjk2K9s0u7-taqk09IMI8hEwv5E6NPWaOlxXX4_jVk3msPqxivvY&s=10",
     "description": "Compact 15HP mini farm tractor designed for narrow orchards, vineyards, and light haulage.",
     "specs": [
