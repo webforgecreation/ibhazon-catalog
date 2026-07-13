@@ -574,7 +574,7 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     "id": "farming-equipment-41",
     "name": "Mini Power Tiller",
     "category": "Farming Equipment",
-    "price": 48999,
+    "price": 28799,
     "image": "https://images.unsplash.com/photo-1534073828943-f801091bb18c?auto=format&fit=crop&w=600&h=450&q=80https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9iDQA9bMbRGsKM1qUOp5T99R_gRNDGU_GhFMVkfiyzzatR8aTbO_rHNc&s=10",
     "description": "High-performance diesel mini rotary power tiller for secondary weeding and farm preparation.",
     "specs": [
@@ -742,7 +742,7 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     "id": "farming-equipment-53",
     "name": "Grain Thresher",
     "category": "Farming Equipment",
-    "price": 54999,
+    "price": 35699,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmo2myFS5f_5z-Hb2ThaUzeBGJk4MPYqz48QS1p2i3AO6ulwJBPKQOZGMr&s=10",
     "description": "High-efficiency mechanized crop grain thresher machine for wheat, paddy, and legumes.",
     "specs": [
@@ -1148,7 +1148,7 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     "id": "furniture-82",
     "name": "L-Shaped Sofa",
     "category": "Furniture",
-    "price": 48999,
+    "price": 25899,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3TnXZ0u-3cZWpJkEVUMnYV7kob41g_sA6OPkkMaYaRL3NHRAt82yczw0&s=10",
     "description": "Luxurious corner L-shaped sectional sofa with reversible chaise and soft velvet upholstery.",
     "specs": [
@@ -1400,7 +1400,7 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     "id": "furniture-100",
     "name": "Modular Wardrobe",
     "category": "Furniture",
-    "price": 59999,
+    "price": 24599,
     "image": "https://www.wakefit.co/blog/wp-content/uploads/2022/09/Warddrobe-furniture.webp",
     "description": "Luxe walk-in modular sliding door wardrobe cabinet customized storage shelves.",
     "specs": [
@@ -1512,7 +1512,7 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     "id": "gym-fitness-108",
     "name": "Smith Machine",
     "category": "Gym & Fitness",
-    "price": 59999,
+    "price": 16599,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkDMn3yvaIQSyvY3J3HAjt48HdiRnkQVy2-lCDVqjGbg&s=10",
     "description": "Commercial-grade linear-bearing smooth glide smith machine squat press bar system.",
     "specs": [
@@ -1526,7 +1526,7 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     "id": "gym-fitness-109",
     "name": "Leg Press",
     "category": "Gym & Fitness",
-    "price": 45999,
+    "price": 21599,
     "image": "https://intowellness.in/wp-content/uploads/2024/10/45_Degree_Leg_Press-1.jpg",
     "description": "Heavy-duty commercial hack squat and linear leg press dual-purpose machine.",
     "specs": [
