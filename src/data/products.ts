@@ -54,22 +54,6 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
     specs: ["12-Cup Capacity", "24-Hour Programmable Timer", "Drip Stop Technology", "Keep-Warm Function"]
   },
   {
-    name: "Dishwasher",
-    category: "Home & Kitchen",
-    price: 38999,
-    unsplashId: "photo-1581622558663-b2933377215e",
-    description: "Energy-efficient built-in dishwasher with customized wash programs for heavily soiled Indian utensils.",
-    specs: ["14 Place Settings", "6 Wash Programs", "Intensive 70°C Hygienic Wash", "Low Noise Operation (44 dB)"]
-  },
-  {
-    name: "Refrigerator",
-    category: "Home & Kitchen",
-    price: 24999,
-    unsplashId: "photo-1571175432247-fe03362a9b3a",
-    description: "Double door frost-free smart inverter refrigerator designed to keep your food fresh for twice as long.",
-    specs: ["260-Liter Capacity", "Smart Inverter Compressor", "Convertible Freezer Technology", "Stabilizer-Free Operation"]
-  },
-  {
     name: "Vacuum Cleaner",
     category: "Home & Kitchen",
     price: 7999,
@@ -167,15 +151,7 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
   },
 
   // === GARDEN EQUIPMENT (20 Items) ===
-  {
-    name: "Lawn Mower",
-    category: "Garden Equipment",
-    price: 18999,
-    unsplashId: "photo-1589301760014-d929f3979dbc",
-    description: "High-torque electric rotary lawn mower with multi-level adjustable cutting heights.",
-    specs: ["1600W Induction Motor", "38cm Cutting Width", "5-Position Height Lever", "45L Grass Collection Box"]
-  },
-  {
+   {
     name: "Grass Trimmer",
     category: "Garden Equipment",
     price: 4999,
@@ -332,7 +308,7 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
   {
     name: "Mini Power Tiller",
     category: "Farming Equipment",
-    price: 48999,
+    price: 39599,
     unsplashId: "photo-1534073828943-f801091bb18c",
     description: "High-performance diesel mini rotary power tiller for secondary weeding and farm preparation.",
     specs: ["7HP Heavy Diesel Engine", "3600 RPM Rotating Tines", "Adjustable Cultivating Depth (5-12 in)", "Electric Hand Start Mode"]
@@ -378,14 +354,6 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
     specs: ["35cc 4-Stroke OHV Engine", "Triple Plunger Pressure Pump", "50-Meter High-Pressure Pipe Hose", "Discharge Flow: 8L/Min"]
   },
   {
-    name: "Water Pump",
-    category: "Farming Equipment",
-    price: 11999,
-    unsplashId: "photo-1542336391-ae2936d8efe4",
-    description: "Portable petrol engine agricultural centrifugal water pump for field irrigation.",
-    specs: ["3HP Petrol Engine", "2-Inch Suction/Discharge Ports", "Max Lift Head: 28 Meters", "Flow Output: 25,000 Liters/Hour"]
-  },
-  {
     name: "Submersible Pump",
     category: "Farming Equipment",
     price: 13999,
@@ -410,14 +378,6 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
     specs: ["58cc Powerful 2-Stroke Motor", "20-Inch Bar & Chain Set", "Automatic Chain Oiler & Brake Guard", "Anti-Vibration Side Grip Handles"]
   },
   {
-    name: "Earth Auger",
-    category: "Farming Equipment",
-    price: 14999,
-    unsplashId: "photo-1504148455328-c376907d081c",
-    description: "Petrol powered ground earth auger for fence post digging, plantation pits, and sampling.",
-    specs: ["63cc Multi-Gear Drive Engine", "Includes 8-Inch and 10-Inch Drill Bits", "Dual Grip Safety Throttle Control", "Anti-Kickback Gearbox Clutch"]
-  },
-  {
     name: "Chaff Cutter",
     category: "Farming Equipment",
     price: 18999,
@@ -426,44 +386,12 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
     specs: ["2HP Copper-Wired AC Motor", "3-Blade High-Carbon Steel Cutter", "Chop Capacity: 800-1000 kg/hr", "Adjustable Feed Rollers Speed"]
   },
   {
-    name: "Grain Thresher",
-    category: "Farming Equipment",
-    price: 35699,
-    unsplashId: "photo-1574323347407-f5e1ad6d020b",
-    description: "High-efficiency mechanized crop grain thresher machine for wheat, paddy, and legumes.",
-    specs: ["5HP Motor or PTO Operated", "Self-Cleaning Sieve Vibrators", "Blower Separation Fan System", "Processing Rate: 500kg/hour"]
-  },
-  {
-    name: "Mini Tractor",
-    category: "Farming Equipment",
-    price: 78659,
-    unsplashId: "photo-1530906358829-e84b2769270f",
-    description: "Compact 15HP mini farm tractor designed for narrow orchards, vineyards, and light haulage.",
-    specs: ["15HP Single Cylinder Diesel Engine", "6 Forward + 2 Reverse Gearbox", "Category-1 3-Point Hydraulic Hitch", "Power Take-Off (PTO) Speed: 540 RPM"]
-  },
-  {
-    name: "Farm Trailer",
-    category: "Farming Equipment",
-    price: 39999,
-    unsplashId: "photo-1500937386664-56d1dfef3854",
-    description: "High-capacity heavy-duty mild-steel non-tipping farm trailer bobby cart.",
-    specs: ["1.5 Ton Carrying Weight Limit", "Reinforced Rigid Steel Tube Axle", "Removable Three-Way Tailgate Panels", "16-Inch Off-Road Farm Lug Tires"]
-  },
-  {
     name: "Soil Testing Kit",
     category: "Farming Equipment",
     price: 1999,
     unsplashId: "photo-1595855759920-86582396756a",
     description: "Professional digital soil testing laboratory kit measuring nitrogen, phosphorus, potassium, and pH.",
     specs: ["80 Testing Reagents Included", "Digital Colorimeter Spectral Meter", "Covers N, P, K, and soil pH Levels", "Includes detailed fertilizer guidelines book"]
-  },
-  {
-    name: "Milking Machine",
-    category: "Farming Equipment",
-    price: 27999,
-    unsplashId: "photo-1570125909232-eb263c188f7e",
-    description: "Single-bucket automated cow and buffalo vacuum milking machine system.",
-    specs: ["25-Liter Food Grade SS304 Bucket", "High-Efficiency 0.55KW Vacuum Pump", "Simulated Calf Milking Pulsator", "Silicon Food-Grade Milking Liners"]
   },
   {
     name: "Poultry Feeder",
@@ -480,14 +408,6 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
     unsplashId: "photo-1500937386664-56d1dfef3854",
     description: "Compact lightweight petrol power weeder machine for rows crop weed management.",
     specs: ["3HP 2-Stroke Petrol Engine", "Adjustable tilling width 10-16 inch", "Foldable Handle for Transportation", "Dual Heavy Soil-Biting Rotors"]
-  },
-  {
-    name: "Solar Water Pump",
-    category: "Farming Equipment",
-    price: 45999,
-    unsplashId: "photo-1508514177221-188b1cf16e9d",
-    description: "DC high-head solar water pumping system complete with smart MPPT charge controller.",
-    specs: ["1HP DC Brushless Submersible Motor", "MPPT Smart Controller System Included", "Direct Drive Solar PV Powered", "Max Discharge Lift: 60 Meters"]
   },
 
   // === PET SUPPLIES (20 Items) ===
@@ -653,23 +573,7 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
   },
 
   // === FURNITURE (20 Items) ===
-  {
-    name: "3-Seater Sofa",
-    category: "Furniture",
-    price: 27999,
-    unsplashId: "photo-1493663284031-b7e3aefcae8e",
-    description: "Elegant 3-seater living room couch sofa upholstered in premium breathable linen fabric.",
-    specs: ["Frame: Solid Teak Wood Frame", "Fabric: Stain-Resistant Grey Linen", "High-Density Foam Cushioning", "Dimensions: 82W x 34D x 32H inches"]
-  },
-  {
-    name: "L-Shaped Sofa",
-    category: "Furniture",
-    price: 23699,
-    unsplashId: "photo-1555041469-a586c61ea9bc",
-    description: "Luxurious corner L-shaped sectional sofa with reversible chaise and soft velvet upholstery.",
-    specs: ["Seating Capacity: 5 Adults", "Premium Deep Navy Blue Velvet", "Pocket Spring Cushion Base Comfort", "Solid Pine Wood Leg Support Units"]
-  },
-  {
+   {
     name: "Coffee Table",
     category: "Furniture",
     price: 5999,
@@ -684,30 +588,6 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
     unsplashId: "photo-1595428774223-ef52624120d2",
     description: "Wall-mounted sleek TV media entertainment console unit with drawers and cable management.",
     specs: ["Holds TV Sizes up to 65 Inches", "Textured Walnut & Matte Black Polish", "3 Pull-Out Drawers with Soft Close", "Rear Pre-Drilled Cable Outlet Grommets"]
-  },
-  {
-    name: "Dining Table",
-    category: "Furniture",
-    price: 24999,
-    unsplashId: "photo-1577140917170-285929fb55b7",
-    description: "Modern 6-seater solid wood dining table with elegant grain details, excluding chairs.",
-    specs: ["Material: Premium Sheesham Wood", "Premium Honey-Teak Wood Finish", "Seats up to 6 Adults Comfortably", "Heavy-Duty Reinforced Table Joint Bolts"]
-  },
-  {
-    name: "King Size Bed",
-    category: "Furniture",
-    price: 32999,
-    unsplashId: "photo-1505691938895-1758d7feb511",
-    description: "Royal king-size solid wood platform bed frame with tall tufted upholstered headboard.",
-    specs: ["Fits Bed Mattress: 72 x 78 inches", "Beige Upholstered Linen Headboard", "Integrated Hydraulic Storage Box Option", "Strong Solid Plywood Slats Base"]
-  },
-  {
-    name: "Wardrobe",
-    category: "Furniture",
-    price: 21999,
-    unsplashId: "photo-1558882224-cca166733360",
-    description: "Spacious 3-door wooden wardrobe clothes closet organizer with drawers and mirrors.",
-    specs: ["High-Density MDF Melamine Board", "Wenge Dark Chocolate Wood Finish", "Chrome Plated Heavy Hanger Rails", "Includes Integrated Safe Locker Unit"]
   },
   {
     name: "Study Table",
@@ -782,14 +662,6 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
     specs: ["Waterproof Anodized Stainless Steel", "High-Definition Front Facing Mirror", "Adjustable Inner Glass Shelves", "Magnetic Catch door Closure Gasket"]
   },
   {
-    name: "Conference Table",
-    category: "Furniture",
-    price: 34999,
-    unsplashId: "photo-1542744094-3a31f103e35f",
-    description: "Spacious oval boardroom office conference discussion table with cable outlet boxes.",
-    specs: ["Size: 8 x 4 Feet Oval Design", "Extra Thick 25mm Melamine Tabletop", "2 Integrated Pop-up Power Wire Ports", "Heavy Pedestal Solid Support Pillars"]
-  },
-  {
     name: "Kids Bed",
     category: "Furniture",
     price: 18999,
@@ -804,14 +676,6 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
     unsplashId: "photo-1511211059530-5b8714eb6c75",
     description: "Compact 3-piece patio garden balcony furniture set with 2 armchairs and round tea table.",
     specs: ["Handwoven Rattan PE String Art", "Sturdy Powder Coated Steel Frame Base", "5mm Tempered Glass Top Tea Table", "Includes Thick Washable Seat Cushions"]
-  },
-  {
-    name: "Modular Wardrobe",
-    category: "Furniture",
-    price: 46899,
-    unsplashId: "photo-1558882224-cca166733360",
-    description: "Luxe walk-in modular sliding door wardrobe cabinet customized storage shelves.",
-    specs: ["Anti-Jump Smooth Sliding Doors", "Fenix Scratch-Resistant Matte Finish", "12 Shelving Dividers & 4 Large Drawers", "Built-In Motion Sensor LED Wardrobe Lights"]
   },
 
   // === GYM & FITNESS (20 Items) ===
@@ -864,36 +728,12 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
     specs: ["Supports up to 250kg Total Load", "7 Backrest Positions (-20° to 85°)", "High-Density Thick Foam Leather pad", "Heavy Duty 2x2 Inch Steel Construction"]
   },
   {
-    name: "Power Rack",
-    category: "Gym & Fitness",
-    price: 29999,
-    unsplashId: "photo-1540206276907-fbd7c1aa2959",
-    description: "Heavy-duty home gym squat cage power rack with safety spotters & pull up bars.",
-    specs: ["Frame: 12-Gauge 2x2 Inch Steel", "Maximum Loading Capacity: 400kg", "Includes J-Cups and Pin-Pipe Spotters", "Multi-Grip Pull-Up Bar Station Unit"]
-  },
-  {
-    name: "Smith Machine",
-    category: "Gym & Fitness",
-    price: 25699,
-    unsplashId: "photo-1540206276907-fbd7c1aa2959",
-    description: "Commercial-grade linear-bearing smooth glide smith machine squat press bar system.",
-    specs: ["Self-Balancing 20kg Guided Barbell", "12 Height Lock-out Safety Pegs", "Dual Weight Storage Horn Posts", "Hardened Steel Linear Bearings Rollers"]
-  },
-  {
     name: "Leg Press",
     category: "Gym & Fitness",
-    price: 19899,
+    price: 25899,
     unsplashId: "photo-1540206276907-fbd7c1aa2959",
     description: "Heavy-duty commercial hack squat and linear leg press dual-purpose machine.",
     specs: ["Load Capacity: Up to 500kg", "Thick Dual-Angle Adjustable Backrest", "Oversized Solid Steel Anti-Slip Footplate", "Heavy Quad Linear Guide Rod Rollers"]
-  },
-  {
-    name: "Treadmill",
-    category: "Gym & Fitness",
-    price: 38999,
-    unsplashId: "photo-1571019613454-1cb2f99b2d8b",
-    description: "Smart motorized folding running treadmill with auto incline and live display metrics.",
-    specs: ["Motor Power: 4.0 HP Peak DC Motor", "Speed Range: 1.0 to 18 km/h", "15% Automated Smart Incline Ramp", "10-Inch LCD Touchscreen Live Tracker"]
   },
   {
     name: "Exercise Bike",
@@ -1120,14 +960,6 @@ export const RAW_PRODUCTS_DATA: { name: string; category: string; price: number;
     unsplashId: "photo-1590121755181-2299742617f6",
     description: "Petrol powered chain cutting saw for landscaping, logging, and heavy wood work.",
     specs: ["Engine size: 52cc 2-Stroke Petrol", "Bar Length: 18 Inches Steel Plate", "Dual Safety Hand Guard Chain Brake", "Automatic Chain Lubing Oil Pump"]
-  },
-  {
-    name: "Generator",
-    category: "Tools & Hardware",
-    price: 38999,
-    unsplashId: "photo-1581092160607-ee22621dd758",
-    description: "Portable heavy gasoline inverter power generator for emergency home backup supply.",
-    specs: ["Max Surge Watts: 3000W Output", "Rated running: 2500 Watts (Petrol)", "Super Silent Muffler Case (59 dBA)", "7-Liter Fuel Tank Capacity (10H Run)"]
   },
   {
     name: "Welding Machine",
