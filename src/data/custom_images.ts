@@ -95,34 +95,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "home-kitchen-7",
-    "name": "Dishwasher",
-    "category": "Home & Kitchen",
-    "price": 38999,
-    "image": "https://www.crompton.co.in/cdn/shop/files/Artboard3_318a203a-9eb0-4a91-b96b-2828d197b1a2.jpg?v=1738903257&width=1946",
-    "description": "Energy-efficient built-in dishwasher with customized wash programs for heavily soiled Indian utensils.",
-    "specs": [
-      "14 Place Settings",
-      "6 Wash Programs",
-      "Intensive 70°C Hygienic Wash",
-      "Low Noise Operation (44 dB)"
-    ]
-  },
-  {
-    "id": "home-kitchen-8",
-    "name": "Refrigerator",
-    "category": "Home & Kitchen",
-    "price": 24999,
-    "image": "https://ramtvcenter.com/wp-content/uploads/2024/05/Lloyd-Refrigerator-GLDF243SSWT2PB-3S.jpg",
-    "description": "Double door frost-free smart inverter refrigerator designed to keep your food fresh for twice as long.",
-    "specs": [
-      "260-Liter Capacity",
-      "Smart Inverter Compressor",
-      "Convertible Freezer Technology",
-      "Stabilizer-Free Operation"
-    ]
-  },
-  {
     "id": "home-kitchen-9",
     "name": "Vacuum Cleaner",
     "category": "Home & Kitchen",
@@ -288,20 +260,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "12 Multi-Functional Accessories",
       "3-Speed Pulse Operation",
       "Super-Strong ABS Shell Body"
-    ]
-  },
-  {
-    "id": "garden-equipment-21",
-    "name": "Lawn Mower",
-    "category": "Garden Equipment",
-    "price": 18999,
-    "image": "https://sharpex.com/cdn/shop/files/16-inch-electric-lawn-mower.jpg?v=1748848424&width=1500",
-    "description": "High-torque electric rotary lawn mower with multi-level adjustable cutting heights.",
-    "specs": [
-      "1600W Induction Motor",
-      "38cm Cutting Width",
-      "5-Position Height Lever",
-      "45L Grass Collection Box"
     ]
   },
   {
@@ -574,7 +532,7 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     "id": "farming-equipment-41",
     "name": "Mini Power Tiller",
     "category": "Farming Equipment",
-    "price": 28799,
+    "price": 48999,
     "image": "https://images.unsplash.com/photo-1534073828943-f801091bb18c?auto=format&fit=crop&w=600&h=450&q=80https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9iDQA9bMbRGsKM1qUOp5T99R_gRNDGU_GhFMVkfiyzzatR8aTbO_rHNc&s=10",
     "description": "High-performance diesel mini rotary power tiller for secondary weeding and farm preparation.",
     "specs": [
@@ -655,20 +613,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "farming-equipment-47",
-    "name": "Water Pump",
-    "category": "Farming Equipment",
-    "price": 11999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREArT0XalDp-2NR3Uc0xXk9KtcpxYdm2XhqCfW_4UqZBk8S6ByYcNU0Dk&s=10",
-    "description": "Portable petrol engine agricultural centrifugal water pump for field irrigation.",
-    "specs": [
-      "3HP Petrol Engine",
-      "2-Inch Suction/Discharge Ports",
-      "Max Lift Head: 28 Meters",
-      "Flow Output: 25,000 Liters/Hour"
-    ]
-  },
-  {
     "id": "farming-equipment-48",
     "name": "Submersible Pump",
     "category": "Farming Equipment",
@@ -711,20 +655,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "farming-equipment-51",
-    "name": "Earth Auger",
-    "category": "Farming Equipment",
-    "price": 14999,
-    "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=600&h=450&q=80https://toolz4industry.com/wp-content/uploads/2024/05/gea-68-earth-auger-1.webp",
-    "description": "Petrol powered ground earth auger for fence post digging, plantation pits, and sampling.",
-    "specs": [
-      "63cc Multi-Gear Drive Engine",
-      "Includes 8-Inch and 10-Inch Drill Bits",
-      "Dual Grip Safety Throttle Control",
-      "Anti-Kickback Gearbox Clutch"
-    ]
-  },
-  {
     "id": "farming-equipment-52",
     "name": "Chaff Cutter",
     "category": "Farming Equipment",
@@ -739,48 +669,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "farming-equipment-53",
-    "name": "Grain Thresher",
-    "category": "Farming Equipment",
-    "price": 35699,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmo2myFS5f_5z-Hb2ThaUzeBGJk4MPYqz48QS1p2i3AO6ulwJBPKQOZGMr&s=10",
-    "description": "High-efficiency mechanized crop grain thresher machine for wheat, paddy, and legumes.",
-    "specs": [
-      "5HP Motor or PTO Operated",
-      "Self-Cleaning Sieve Vibrators",
-      "Blower Separation Fan System",
-      "Processing Rate: 500kg/hour"
-    ]
-  },
-  {
-    "id": "farming-equipment-54",
-    "name": "Mini Tractor",
-    "category": "Farming Equipment",
-    "price": 75899,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXPPDzjk2K9s0u7-taqk09IMI8hEwv5E6NPWaOlxXX4_jVk3msPqxivvY&s=10",
-    "description": "Compact 15HP mini farm tractor designed for narrow orchards, vineyards, and light haulage.",
-    "specs": [
-      "15HP Single Cylinder Diesel Engine",
-      "6 Forward + 2 Reverse Gearbox",
-      "Category-1 3-Point Hydraulic Hitch",
-      "Power Take-Off (PTO) Speed: 540 RPM"
-    ]
-  },
-  {
-    "id": "farming-equipment-55",
-    "name": "Farm Trailer",
-    "category": "Farming Equipment",
-    "price": 39999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDfr-uwwpEbd-4cgJqPJZZX7BT9gAHUXP3xEc955QOzJVF6VbxprJt6uGl&s=10",
-    "description": "High-capacity heavy-duty mild-steel non-tipping farm trailer bobby cart.",
-    "specs": [
-      "1.5 Ton Carrying Weight Limit",
-      "Reinforced Rigid Steel Tube Axle",
-      "Removable Three-Way Tailgate Panels",
-      "16-Inch Off-Road Farm Lug Tires"
-    ]
-  },
-  {
     "id": "farming-equipment-56",
     "name": "Soil Testing Kit",
     "category": "Farming Equipment",
@@ -792,20 +680,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Digital Colorimeter Spectral Meter",
       "Covers N, P, K, and soil pH Levels",
       "Includes detailed fertilizer guidelines book"
-    ]
-  },
-  {
-    "id": "farming-equipment-57",
-    "name": "Milking Machine",
-    "category": "Farming Equipment",
-    "price": 27999,
-    "image": "https://cdn.shopify.com/s/files/1/0722/2059/files/prompt-single-bucket-single-cluster-trolley-type-milking-machine-file-16274.png?v=1737453927",
-    "description": "Single-bucket automated cow and buffalo vacuum milking machine system.",
-    "specs": [
-      "25-Liter Food Grade SS304 Bucket",
-      "High-Efficiency 0.55KW Vacuum Pump",
-      "Simulated Calf Milking Pulsator",
-      "Silicon Food-Grade Milking Liners"
     ]
   },
   {
@@ -834,20 +708,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Adjustable tilling width 10-16 inch",
       "Foldable Handle for Transportation",
       "Dual Heavy Soil-Biting Rotors"
-    ]
-  },
-  {
-    "id": "farming-equipment-60",
-    "name": "Solar Water Pump",
-    "category": "Farming Equipment",
-    "price": 45999,
-    "image": "https://www.haoshpump.com/wp-content/uploads/2021/03/solar-water-pump-01.jpg",
-    "description": "DC high-head solar water pumping system complete with smart MPPT charge controller.",
-    "specs": [
-      "1HP DC Brushless Submersible Motor",
-      "MPPT Smart Controller System Included",
-      "Direct Drive Solar PV Powered",
-      "Max Discharge Lift: 60 Meters"
     ]
   },
   {
@@ -1131,34 +991,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "furniture-81",
-    "name": "3-Seater Sofa",
-    "category": "Furniture",
-    "price": 27999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFTqQ9T2iOlGMz35jwt3JVuvuZZo77Yog6fm06n1uM0erRaoGU7iL4Jzg&s=10",
-    "description": "Elegant 3-seater living room couch sofa upholstered in premium breathable linen fabric.",
-    "specs": [
-      "Frame: Solid Teak Wood Frame",
-      "Fabric: Stain-Resistant Grey Linen",
-      "High-Density Foam Cushioning",
-      "Dimensions: 82W x 34D x 32H inches"
-    ]
-  },
-  {
-    "id": "furniture-82",
-    "name": "L-Shaped Sofa",
-    "category": "Furniture",
-    "price": 25899,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3TnXZ0u-3cZWpJkEVUMnYV7kob41g_sA6OPkkMaYaRL3NHRAt82yczw0&s=10",
-    "description": "Luxurious corner L-shaped sectional sofa with reversible chaise and soft velvet upholstery.",
-    "specs": [
-      "Seating Capacity: 5 Adults",
-      "Premium Deep Navy Blue Velvet",
-      "Pocket Spring Cushion Base Comfort",
-      "Solid Pine Wood Leg Support Units"
-    ]
-  },
-  {
     "id": "furniture-83",
     "name": "Coffee Table",
     "category": "Furniture",
@@ -1184,48 +1016,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Textured Walnut & Matte Black Polish",
       "3 Pull-Out Drawers with Soft Close",
       "Rear Pre-Drilled Cable Outlet Grommets"
-    ]
-  },
-  {
-    "id": "furniture-85",
-    "name": "Dining Table",
-    "category": "Furniture",
-    "price": 24999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQil3zLPW4pLPFWDY7QaGIXNkibyattyTIFNzV4ylOxOJt8Jh2RyS3lLbo&s=10",
-    "description": "Modern 6-seater solid wood dining table with elegant grain details, excluding chairs.",
-    "specs": [
-      "Material: Premium Sheesham Wood",
-      "Premium Honey-Teak Wood Finish",
-      "Seats up to 6 Adults Comfortably",
-      "Heavy-Duty Reinforced Table Joint Bolts"
-    ]
-  },
-  {
-    "id": "furniture-86",
-    "name": "King Size Bed",
-    "category": "Furniture",
-    "price": 32999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoiz0DkzpjLL1FwDTCfSg-KSmtikTZeyDTXL1FbaAmKEbDery9xUdPPAw&s=10",
-    "description": "Royal king-size solid wood platform bed frame with tall tufted upholstered headboard.",
-    "specs": [
-      "Fits Bed Mattress: 72 x 78 inches",
-      "Beige Upholstered Linen Headboard",
-      "Integrated Hydraulic Storage Box Option",
-      "Strong Solid Plywood Slats Base"
-    ]
-  },
-  {
-    "id": "furniture-87",
-    "name": "Wardrobe",
-    "category": "Furniture",
-    "price": 21999,
-    "image": "https://www.nilkamalhomes.com/cdn/shop/files/4DoorwardrobewalnutLS.jpg?v=1682665917&width=1214",
-    "description": "Spacious 3-door wooden wardrobe clothes closet organizer with drawers and mirrors.",
-    "specs": [
-      "High-Density MDF Melamine Board",
-      "Wenge Dark Chocolate Wood Finish",
-      "Chrome Plated Heavy Hanger Rails",
-      "Includes Integrated Safe Locker Unit"
     ]
   },
   {
@@ -1355,20 +1145,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "furniture-97",
-    "name": "Conference Table",
-    "category": "Furniture",
-    "price": 34999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSTI4zQxKLkJSWHp0XBN1WAVOtEIhWog4sIbXybJ45ZUZJwpvuDr7TS0k&s=10",
-    "description": "Spacious oval boardroom office conference discussion table with cable outlet boxes.",
-    "specs": [
-      "Size: 8 x 4 Feet Oval Design",
-      "Extra Thick 25mm Melamine Tabletop",
-      "2 Integrated Pop-up Power Wire Ports",
-      "Heavy Pedestal Solid Support Pillars"
-    ]
-  },
-  {
     "id": "furniture-98",
     "name": "Kids Bed",
     "category": "Furniture",
@@ -1394,20 +1170,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Sturdy Powder Coated Steel Frame Base",
       "5mm Tempered Glass Top Tea Table",
       "Includes Thick Washable Seat Cushions"
-    ]
-  },
-  {
-    "id": "furniture-100",
-    "name": "Modular Wardrobe",
-    "category": "Furniture",
-    "price": 24599,
-    "image": "https://www.wakefit.co/blog/wp-content/uploads/2022/09/Warddrobe-furniture.webp",
-    "description": "Luxe walk-in modular sliding door wardrobe cabinet customized storage shelves.",
-    "specs": [
-      "Anti-Jump Smooth Sliding Doors",
-      "Fenix Scratch-Resistant Matte Finish",
-      "12 Shelving Dividers & 4 Large Drawers",
-      "Built-In Motion Sensor LED Wardrobe Lights"
     ]
   },
   {
@@ -1495,38 +1257,10 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "gym-fitness-107",
-    "name": "Power Rack",
-    "category": "Gym & Fitness",
-    "price": 29999,
-    "image": "https://sfhealthtech.com/cdn/shop/files/Black.jpg?v=1740132630&width=1946",
-    "description": "Heavy-duty home gym squat cage power rack with safety spotters & pull up bars.",
-    "specs": [
-      "Frame: 12-Gauge 2x2 Inch Steel",
-      "Maximum Loading Capacity: 400kg",
-      "Includes J-Cups and Pin-Pipe Spotters",
-      "Multi-Grip Pull-Up Bar Station Unit"
-    ]
-  },
-  {
-    "id": "gym-fitness-108",
-    "name": "Smith Machine",
-    "category": "Gym & Fitness",
-    "price": 16599,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkDMn3yvaIQSyvY3J3HAjt48HdiRnkQVy2-lCDVqjGbg&s=10",
-    "description": "Commercial-grade linear-bearing smooth glide smith machine squat press bar system.",
-    "specs": [
-      "Self-Balancing 20kg Guided Barbell",
-      "12 Height Lock-out Safety Pegs",
-      "Dual Weight Storage Horn Posts",
-      "Hardened Steel Linear Bearings Rollers"
-    ]
-  },
-  {
     "id": "gym-fitness-109",
     "name": "Leg Press",
     "category": "Gym & Fitness",
-    "price": 21599,
+    "price": 45999,
     "image": "https://intowellness.in/wp-content/uploads/2024/10/45_Degree_Leg_Press-1.jpg",
     "description": "Heavy-duty commercial hack squat and linear leg press dual-purpose machine.",
     "specs": [
@@ -1534,20 +1268,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Thick Dual-Angle Adjustable Backrest",
       "Oversized Solid Steel Anti-Slip Footplate",
       "Heavy Quad Linear Guide Rod Rollers"
-    ]
-  },
-  {
-    "id": "gym-fitness-110",
-    "name": "Treadmill",
-    "category": "Gym & Fitness",
-    "price": 38999,
-    "image": "https://www.afton.in/s/55b31c5573bc5c994472673c/655462cff0f096e2aabe2533/bt28.JPG",
-    "description": "Smart motorized folding running treadmill with auto incline and live display metrics.",
-    "specs": [
-      "Motor Power: 4.0 HP Peak DC Motor",
-      "Speed Range: 1.0 to 18 km/h",
-      "15% Automated Smart Incline Ramp",
-      "10-Inch LCD Touchscreen Live Tracker"
     ]
   },
   {
@@ -1940,20 +1660,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Bar Length: 18 Inches Steel Plate",
       "Dual Safety Hand Guard Chain Brake",
       "Automatic Chain Lubing Oil Pump"
-    ]
-  },
-  {
-    "id": "tools-hardware-139",
-    "name": "Generator",
-    "category": "Tools & Hardware",
-    "price": 38999,
-    "image": "https://tomahawk-power.com/cdn/shop/files/TG4000H_1_grande.jpg?v=1727473425",
-    "description": "Portable heavy gasoline inverter power generator for emergency home backup supply.",
-    "specs": [
-      "Max Surge Watts: 3000W Output",
-      "Rated running: 2500 Watts (Petrol)",
-      "Super Silent Muffler Case (59 dBA)",
-      "7-Liter Fuel Tank Capacity (10H Run)"
     ]
   },
   {
