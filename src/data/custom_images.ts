@@ -109,20 +109,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "home-kitchen-10",
-    "name": "Air Purifier",
-    "category": "Home & Kitchen",
-    "price": 9999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8DKu3U1KNl_4_UIPMnM4G18990qPtNbqU2XIVsSxF6etxg4IcJDgUmwU0&s=10",
-    "description": "True HEPA air purifier capturing 99.97% of PM2.5 particles, smoke, dust, and pet dander.",
-    "specs": [
-      "CADR 350 m³/h",
-      "3-Layer Filtration (Pre, HEPA, Carbon)",
-      "Real-Time AQI Digital Monitor",
-      "Whisper Silent Sleep Mode"
-    ]
-  },
-  {
     "id": "home-kitchen-11",
     "name": "Storage Containers",
     "category": "Home & Kitchen",
@@ -148,20 +134,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Stainless Steel construction",
       "Load Capacity up to 80kg",
       "360-Degree Swivel Castors"
-    ]
-  },
-  {
-    "id": "home-kitchen-13",
-    "name": "Water Purifier",
-    "category": "Home & Kitchen",
-    "price": 14999,
-    "image": "https://m.media-amazon.com/images/I/71AR5ON90bL._AC_UF1000,1000_QL80_.jpg",
-    "description": "Advanced RO+UV+UF multi-stage alkaline water purifier with active copper cartridge technology.",
-    "specs": [
-      "8-Liter Storage Tank",
-      "7-Stage Purification",
-      "Copper & Alkaline Mineralizer",
-      "Digital Flow Indicators"
     ]
   },
   {
@@ -274,20 +246,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "10-Inch Cutting Path",
       "90-Degree Adjustable Head",
       "Dual Line Auto-Feed system"
-    ]
-  },
-  {
-    "id": "garden-equipment-23",
-    "name": "Hedge Trimmer",
-    "category": "Garden Equipment",
-    "price": 5999,
-    "image": "https://m.media-amazon.com/images/I/51r7lzLfddL._AC_UF1000,1000_QL80_.jpg",
-    "description": "Dual-action hardened steel blades hedge trimmer for clean, precise cuts on branches and hedges.",
-    "specs": [
-      "600W High Speed Power",
-      "22-Inch Laser-Cut Blade",
-      "Dual Trigger Safety System",
-      "3/4-Inch Cutting Capacity"
     ]
   },
   {
@@ -445,34 +403,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "garden-equipment-35",
-    "name": "Garden Bench",
-    "category": "Garden Equipment",
-    "price": 8999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkP7IZ1hKwAVoSOxtGl3MSkvVOCfg1nX2skSzwFt2NA9-NqzKQWatIQ58&s=10",
-    "description": "Classic rust-resistant cast-iron and solid hardwood frame park garden outdoor bench.",
-    "specs": [
-      "Sits 3 Adults (220kg Limit)",
-      "Hardwood Slats Weather-Shield Coat",
-      "Intricate Ivy Pattern Metal Cast",
-      "Includes Mounting Bolts Set"
-    ]
-  },
-  {
-    "id": "garden-equipment-36",
-    "name": "Greenhouse Kit",
-    "category": "Garden Equipment",
-    "price": 29999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG7lTIVdV6XId0tbn8LsiGYtIrmvjH-0c-2zlR2lTHCfS6jVshv3f5ucGv&s=10",
-    "description": "Walk-in greenhouse grow-tent shelter with heavy-duty metal shelving and reinforced cover grid.",
-    "specs": [
-      "Size: 10 x 8 x 6 Feet",
-      "Reinforced Green PE Mesh Cover",
-      "Roll-Up Zipper Screen Door",
-      "12 Wire-Mesh Pot Shelving Bays"
-    ]
-  },
-  {
     "id": "garden-equipment-37",
     "name": "Grow Lights",
     "category": "Garden Equipment",
@@ -529,48 +459,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "farming-equipment-41",
-    "name": "Mini Power Tiller",
-    "category": "Farming Equipment",
-    "price": 48999,
-    "image": "https://images.unsplash.com/photo-1534073828943-f801091bb18c?auto=format&fit=crop&w=600&h=450&q=80https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9iDQA9bMbRGsKM1qUOp5T99R_gRNDGU_GhFMVkfiyzzatR8aTbO_rHNc&s=10",
-    "description": "High-performance diesel mini rotary power tiller for secondary weeding and farm preparation.",
-    "specs": [
-      "7HP Heavy Diesel Engine",
-      "3600 RPM Rotating Tines",
-      "Adjustable Cultivating Depth (5-12 in)",
-      "Electric Hand Start Mode"
-    ]
-  },
-  {
-    "id": "farming-equipment-42",
-    "name": "Rotavator",
-    "category": "Farming Equipment",
-    "price": 34999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJTfIJl38yKwygGJm8X1nmAJEfMmz6gH8_sSZ4i4l9f73IGSTL06jwaFs&s=10",
-    "description": "Tractor-mounted heavy-duty rotavator rotary tiller for intense soil conditioning and pulverizing.",
-    "specs": [
-      "Compatible with 25-45 HP Tractors",
-      "42 L-Shaped Tempered Blades",
-      "Oil-Bath Side Gear Drive",
-      "Working Width: 4.5 Feet"
-    ]
-  },
-  {
-    "id": "farming-equipment-43",
-    "name": "Seed Drill",
-    "category": "Farming Equipment",
-    "price": 15999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUz1x_mCn54_mVY1rapeeDJ_A62DC-viHqhimYtmuq6XawDIudiurWicnp&s=10",
-    "description": "Multi-row manual or tractor drawn direct seed drilling and sowing machinery.",
-    "specs": [
-      "9-Row Seed Hopper Channels",
-      "Adjustable Depth Seed Sowers",
-      "Uniform Row Spacing Calibrator",
-      "Heavy Cast-Iron Ground Openers"
-    ]
-  },
-  {
     "id": "farming-equipment-44",
     "name": "Fertilizer Spreader",
     "category": "Farming Equipment",
@@ -613,62 +501,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "farming-equipment-48",
-    "name": "Submersible Pump",
-    "category": "Farming Equipment",
-    "price": 13999,
-    "image": "https://image.made-in-china.com/202f0j00haNbUKkJgTpG/Submersible-Sewage-Electric-Water-Pump-V750-1HP.webp",
-    "description": "Heavy multi-stage oil-filled borewell submersible water pump for deep underground aquifers.",
-    "specs": [
-      "1.5 HP Cooper Rotor Motor",
-      "10-Stage High-Delivery Pump",
-      "Max Head Lift up to 120 Feet",
-      "Stainless Steel Outer Body Panel"
-    ]
-  },
-  {
-    "id": "farming-equipment-49",
-    "name": "Brush Cutter",
-    "category": "Farming Equipment",
-    "price": 12999,
-    "image": "https://toolz4industry.com/wp-content/uploads/2025/05/snaiker-brush-cutter-163.jpg",
-    "description": "Heavy-duty petrol weed trimmer and brush cutter with 3T metal blade and nylon head.",
-    "specs": [
-      "52cc 2-Stroke Petrol Engine",
-      "3T Blade & Tap-and-Go Nylon Trimmer",
-      "Ergonomic Bull-Horn Handles",
-      "Split Shaft Quick Connection Design"
-    ]
-  },
-  {
-    "id": "farming-equipment-50",
-    "name": "Chain Saw",
-    "category": "Farming Equipment",
-    "price": 9999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_LgpT2BWgfV9_dCaWFbqZ_X5CoX7TiMObw2C5M1Yn3DdzKdb1BNdD27fx&s=10",
-    "description": "High-power petrol chainsaw with premium Oregon bar and chain for lumbering and logging.",
-    "specs": [
-      "58cc Powerful 2-Stroke Motor",
-      "20-Inch Bar & Chain Set",
-      "Automatic Chain Oiler & Brake Guard",
-      "Anti-Vibration Side Grip Handles"
-    ]
-  },
-  {
-    "id": "farming-equipment-52",
-    "name": "Chaff Cutter",
-    "category": "Farming Equipment",
-    "price": 18999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuJnw_Jrf-sz4jvc_OEczw7I9L5G2FHkCcADK4yljKwVX7mJ-VuIv_f5LX&s=10",
-    "description": "Electric livestock fodder chaff cutter machine with heavy flywheels for dairy farmers.",
-    "specs": [
-      "2HP Copper-Wired AC Motor",
-      "3-Blade High-Carbon Steel Cutter",
-      "Chop Capacity: 800-1000 kg/hr",
-      "Adjustable Feed Rollers Speed"
-    ]
-  },
-  {
     "id": "farming-equipment-56",
     "name": "Soil Testing Kit",
     "category": "Farming Equipment",
@@ -694,20 +526,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Heavy-Duty UV Stabilized Plastic",
       "Anti-Scrap Feeding Partition Grid",
       "Includes Rain-Shield Overhang Cap"
-    ]
-  },
-  {
-    "id": "farming-equipment-59",
-    "name": "Power Weeder",
-    "category": "Farming Equipment",
-    "price": 21999,
-    "image": "https://toolz4industry.com/wp-content/uploads/2025/04/self-start-power-weeder-154.webp",
-    "description": "Compact lightweight petrol power weeder machine for rows crop weed management.",
-    "specs": [
-      "3HP 2-Stroke Petrol Engine",
-      "Adjustable tilling width 10-16 inch",
-      "Foldable Handle for Transportation",
-      "Dual Heavy Soil-Biting Rotors"
     ]
   },
   {
@@ -893,20 +711,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "pet-supplies-74",
-    "name": "Dog Kennel",
-    "category": "Pet Supplies",
-    "price": 12999,
-    "image": "https://m.media-amazon.com/images/I/71c4bswMgkL._AC_UF1000,1000_QL80_.jpg",
-    "description": "Weatherproof heavy-duty plastic outdoor dog house kennel with elevated floor structure.",
-    "specs": [
-      "Assembled Size: 36 x 32 x 34 inches",
-      "Impact Resistant UV-Stable Resin",
-      "Dual Slanted Roof Rain Gutters",
-      "Ventilation Inlets for Constant Airflow"
-    ]
-  },
-  {
     "id": "pet-supplies-75",
     "name": "Cat Litter Box",
     "category": "Pet Supplies",
@@ -1005,20 +809,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "furniture-84",
-    "name": "TV Unit",
-    "category": "Furniture",
-    "price": 11999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo0tdXhDsvD7gZEb3DE_HEo-OGoxaFMl1SwyrxcKZv-jYwVNRNJMbYFRMy&s=10",
-    "description": "Wall-mounted sleek TV media entertainment console unit with drawers and cable management.",
-    "specs": [
-      "Holds TV Sizes up to 65 Inches",
-      "Textured Walnut & Matte Black Polish",
-      "3 Pull-Out Drawers with Soft Close",
-      "Rear Pre-Drilled Cable Outlet Grommets"
-    ]
-  },
-  {
     "id": "furniture-88",
     "name": "Study Table",
     "category": "Furniture",
@@ -1044,20 +834,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Scratch-Resistant Melamine Veneer",
       "3 Key-Lock Secure Storage Drawers",
       "Heavy Gauge Pow-Coated Steel Frame"
-    ]
-  },
-  {
-    "id": "furniture-90",
-    "name": "Gaming Chair",
-    "category": "Furniture",
-    "price": 14999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4m2n4iZtMnYQvGiegzVt4vd6WBVBddAm36pRjK7vwM3029VuywThvLiXJ&s=10",
-    "description": "Ergonomic high-back PC gaming chair with lumbar support, footrest, and 180° recline.",
-    "specs": [
-      "Breathable Carbon Fiber PU Leather",
-      "Heavy-Duty Class 4 Gas Lift Cylinder",
-      "3D Adjustable armrests",
-      "Pull-Out Retractable Padded Footrest"
     ]
   },
   {
@@ -1145,20 +921,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "furniture-98",
-    "name": "Kids Bed",
-    "category": "Furniture",
-    "price": 18999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS87FpKDVOrHsd2F5L8ATwQ9XXOrtjLKr7sNcc4ie7_1N9gz_Ungi-a_Xdj&s=10",
-    "description": "Cute and safe wooden single toddler bed frame with protective side guard rails.",
-    "specs": [
-      "Solid Pine Wood Construction",
-      "Water-Based Eco Friendly Non-Toxic Paints",
-      "Dual Sided Protective Guard Rails",
-      "Fits Mattress Size: 36 x 72 Inches"
-    ]
-  },
-  {
     "id": "furniture-99",
     "name": "Balcony Set",
     "category": "Furniture",
@@ -1170,34 +932,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Sturdy Powder Coated Steel Frame Base",
       "5mm Tempered Glass Top Tea Table",
       "Includes Thick Washable Seat Cushions"
-    ]
-  },
-  {
-    "id": "gym-fitness-101",
-    "name": "Adjustable Dumbbells",
-    "category": "Gym & Fitness",
-    "price": 14999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpoqLZWGMsHcHLYIC7Zj6hE7gXsubCNT7oVHlz2gkeZB-W3hCGnFJU9oZF&s=10",
-    "description": "All-in-one smart select-dial adjustable dumbbells pair replacing 15 weight sets.",
-    "specs": [
-      "Weight Range: 2.5 to 24 kg per hand",
-      "Rapid Smooth Dial Selector System",
-      "High-Impact Thermoplastic Clad Steel",
-      "Includes 2 Safety Storage Trays"
-    ]
-  },
-  {
-    "id": "gym-fitness-102",
-    "name": "Barbell Set",
-    "category": "Gym & Fitness",
-    "price": 18999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQysPhVhtN0xfx4psoRkuDtOloC9k2Emnl0iNq881GFQ&s=10",
-    "description": "Standard olympic 7-foot barbell bar along with quick-release collar clamps.",
-    "specs": [
-      "7-Foot 20kg Hard Chrome Barbell",
-      "Maximum Load Weight Limit: 300kg",
-      "Elite Brass Bushings Smooth Spin",
-      "Deep Diamond Knurled Grip Texture"
     ]
   },
   {
@@ -1240,76 +974,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Resistance range: 10 lbs to 120 lbs",
       "100% Natural Malaysian Latex Rubber",
       "Includes Carry Pouch, Handles, and Ankle Straps"
-    ]
-  },
-  {
-    "id": "gym-fitness-106",
-    "name": "Bench Press",
-    "category": "Gym & Fitness",
-    "price": 11999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGWSzlASNQIxPpDw_0ibwJsEzp2_mmSk3Hbw71n0cQkIgDBpVNYQpg3OY&s=10",
-    "description": "Multi-position incline decline flat utility strength barbell weight bench press.",
-    "specs": [
-      "Supports up to 250kg Total Load",
-      "7 Backrest Positions (-20° to 85°)",
-      "High-Density Thick Foam Leather pad",
-      "Heavy Duty 2x2 Inch Steel Construction"
-    ]
-  },
-  {
-    "id": "gym-fitness-109",
-    "name": "Leg Press",
-    "category": "Gym & Fitness",
-    "price": 45999,
-    "image": "https://intowellness.in/wp-content/uploads/2024/10/45_Degree_Leg_Press-1.jpg",
-    "description": "Heavy-duty commercial hack squat and linear leg press dual-purpose machine.",
-    "specs": [
-      "Load Capacity: Up to 500kg",
-      "Thick Dual-Angle Adjustable Backrest",
-      "Oversized Solid Steel Anti-Slip Footplate",
-      "Heavy Quad Linear Guide Rod Rollers"
-    ]
-  },
-  {
-    "id": "gym-fitness-111",
-    "name": "Exercise Bike",
-    "category": "Gym & Fitness",
-    "price": 17999,
-    "image": "https://m.media-amazon.com/images/I/714lzmu1QaL._AC_UF350,350_QL80_.jpg",
-    "description": "Belt-driven silent indoor cycling studio exercise card bike with flywheel.",
-    "specs": [
-      "Flywheel Weight: 18kg CNC Balanced",
-      "Frictionless Smooth Magnetic Resistance",
-      "Fully Adjustable Racing Handlebar & Seat",
-      "Digital LCD Display: Cadence, Pulse, Time"
-    ]
-  },
-  {
-    "id": "gym-fitness-112",
-    "name": "Elliptical",
-    "category": "Gym & Fitness",
-    "price": 24999,
-    "image": "https://energiefitness.in/cdn/shop/files/Best_Elliptical_Cross_Trainer_Machine_-_FT-6806.jpg?v=1769749171",
-    "description": "Magnetic cross trainer elliptical machine for full body zero impact cardio workouts.",
-    "specs": [
-      "Stride Length: 18 Inches Comfort",
-      "16 Levels Digital Magnetic Drag",
-      "Dual Action Moving & Fixed Handles",
-      "Contact Pulse Grip Sensor Nodes"
-    ]
-  },
-  {
-    "id": "gym-fitness-113",
-    "name": "Rowing Machine",
-    "category": "Gym & Fitness",
-    "price": 29999,
-    "image": "https://sfhealthtech.com/cdn/shop/articles/10_Ways_Rowing_Machines_Can_Benefit_Your_Health.webp?v=1715158879",
-    "description": "Dual resistance water and magnetic rowing machine console with oak wood accents.",
-    "specs": [
-      "Natural Polycarbonate Water Flywheel Tank",
-      "12-Blade Water Drag Paddles System",
-      "Smooth Silent Dual Aluminum Slide Rails",
-      "Ergonomic Molded Padded Gliding Seat"
     ]
   },
   {
@@ -1439,20 +1103,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "tools-hardware-123",
-    "name": "Circular Saw",
-    "category": "Tools & Hardware",
-    "price": 7999,
-    "image": "https://atozshop.co.in/wp-content/uploads/2023/12/6143fixsgEL._SX466_.jpg",
-    "description": "Heavy-duty electric circular wood cutting saw with adjustable bevel cutting guide.",
-    "specs": [
-      "1400W Powerful Induction Motor",
-      "Blade Speed: 5000 RPM Max",
-      "7-1/4 Inch Carbide Tipped Saw Blade",
-      "Bevel Angle Cuts Range: 0° to 45°"
-    ]
-  },
-  {
     "id": "tools-hardware-124",
     "name": "Angle Grinder",
     "category": "Tools & Hardware",
@@ -1464,20 +1114,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Disc Wheel Diameter: 4 Inches (100mm)",
       "No-Load Fast Speed: 11,000 RPM",
       "Auxiliary 2-Position Handle Shield"
-    ]
-  },
-  {
-    "id": "tools-hardware-125",
-    "name": "Jigsaw",
-    "category": "Tools & Hardware",
-    "price": 3999,
-    "image": "https://operatools.in/wp-content/uploads/2022/10/IMG_20220914_173423_456.jpg",
-    "description": "Variable speed orbital reciprocating laser jigsaw for curved timber and steel cutting.",
-    "specs": [
-      "650W High Precision Motor",
-      "4-Stage Orbital Saw Blade Action",
-      "Tool-Free Quick Blade Change Collar",
-      "Integrated Red Laser Line Pointer Guide"
     ]
   },
   {
@@ -1534,34 +1170,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Hardened S2 Steel Tips (Phillips/Flat/Torx)",
       "Soft Ergonomic Non-Slip Handle Grips",
       "Comes with Wall-mountable Storage Stand"
-    ]
-  },
-  {
-    "id": "tools-hardware-130",
-    "name": "Ladder",
-    "category": "Tools & Hardware",
-    "price": 4999,
-    "image": "https://rukminim2.flixcart.com/image/480/640/xif0q/step-ladder/h/n/v/no-63-no-5-step-ms-ladder-150-5-keepwell-original-imahfagqxgvygzbj.jpeg?q=90",
-    "description": "Sturdy non-slip aluminum folding A-frame step utility household ladder.",
-    "specs": [
-      "5-Step Ladder (Height: 5 Feet)",
-      "Aviation-Grade Anodized Aluminum Alloy",
-      "Maximum Load Weight Limit: 150kg",
-      "Anti-Slip Ribbed Rubberized Foot Caps"
-    ]
-  },
-  {
-    "id": "tools-hardware-131",
-    "name": "Air Compressor",
-    "category": "Tools & Hardware",
-    "price": 12999,
-    "image": "https://ravimachines.com/wp-content/uploads/2017/03/Single-Cylinder-scaled.jpg",
-    "description": "Portable oil-free direct drive air compressor with dual pressure indicators.",
-    "specs": [
-      "Motor: 1.5 HP High Output",
-      "24-Liter Heavy-Gauge Steel Tank",
-      "Maximum Air Pressure: 8 Bar (115 PSI)",
-      "Maintenance Free Oil-less Mechanism"
     ]
   },
   {
@@ -1649,34 +1257,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "tools-hardware-138",
-    "name": "Chainsaw",
-    "category": "Tools & Hardware",
-    "price": 9999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVvjIr1rEY88v-An0WESAwCLhn1quPXYm-j5TUYL-hlBvpdln03CygxkLO&s=10",
-    "description": "Petrol powered chain cutting saw for landscaping, logging, and heavy wood work.",
-    "specs": [
-      "Engine size: 52cc 2-Stroke Petrol",
-      "Bar Length: 18 Inches Steel Plate",
-      "Dual Safety Hand Guard Chain Brake",
-      "Automatic Chain Lubing Oil Pump"
-    ]
-  },
-  {
-    "id": "tools-hardware-140",
-    "name": "Welding Machine",
-    "category": "Tools & Hardware",
-    "price": 11999,
-    "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&h=450&q=80https://rukmini1.flixcart.com/image/1500/1500/xif0q/welding-machine/v/j/m/220-mig-mag-mma-3-in-1-multiprocess-ibell-original-imah8ac4jbphnnfq.jpeg?q=70",
-    "description": "Smart IGBT inverter stick ARC welding machine with digital LCD amp display.",
-    "specs": [
-      "Current Range: 20-200 Amps DC",
-      "IGBT Power Inverter Core Technology",
-      "Hot Start & Anti-Stick safety guards",
-      "Extremely Lightweight & Portable Body"
-    ]
-  },
-  {
     "id": "office-supplies-141",
     "name": "Office Chair",
     "category": "Office Supplies",
@@ -1688,34 +1268,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Adjustable Neck Pillow Headrest",
       "Sync-Tilt Multi Locking Mechanism",
       "Nylon Twin Caster Glide Wheels"
-    ]
-  },
-  {
-    "id": "office-supplies-142",
-    "name": "Office Table",
-    "category": "Office Supplies",
-    "price": 11999,
-    "image": "https://www.nilkamalhomes.com/cdn/shop/files/NKL_5936copy_500x@2x.jpg?v=1730105418",
-    "description": "Premium large executive wooden office table writing desk with wire drawers.",
-    "specs": [
-      "Size: 5 x 3 Feet Wide Desk Top",
-      "Thick Engineered Oak Finished Panel",
-      "Dual Integrated Power Cable Ports",
-      "Reinforced Trestle Wooden Side Supports"
-    ]
-  },
-  {
-    "id": "office-supplies-143",
-    "name": "Printer",
-    "category": "Office Supplies",
-    "price": 14999,
-    "image": "https://www.brother.in/-/media/ap2/products/printer/hl-t4000dw/hl-t4000dw-r.jpg?rev=c085c85b50194207b34e2a64bd62a657&hash=C267FBE878D775F0F6B476DFA9FCBF7E",
-    "description": "High-speed wireless Wi-Fi all-in-one monochrome laser printer and scanner.",
-    "specs": [
-      "Print Speed: Up to 30 PPM (B/W)",
-      "Automatic Duplex Double Sided Print",
-      "Built-in Wi-Fi, Ethernet, and USB",
-      "Flatbed Scanner with 1200 DPI resolution"
     ]
   },
   {
@@ -1744,20 +1296,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Triple-Coated Scratch-Proof Surface",
       "Integrated Marker Tray Shelf Frame",
       "Heavy-Duty Wall Mounting brackets Set"
-    ]
-  },
-  {
-    "id": "office-supplies-146",
-    "name": "Projector",
-    "category": "Office Supplies",
-    "price": 24999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQtK-9E3Bwwg8KQEu53GQrkN0RWZE4_n0lVEZO_LUTJVK8Lz6iJlRXKiqr&s=10",
-    "description": "Full HD 1080P smart office business projector with high lumen brightness LEDs.",
-    "specs": [
-      "Resolution: native 1920x1080P",
-      "Luminance: 4500 Lumens ANSI Lamp",
-      "Smart OS with Pre-Installed Apps",
-      "HDMI, USB, VGA, and Audio Output Ports"
     ]
   },
   {
@@ -2125,20 +1663,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "lighting-173",
-    "name": "Chandelier",
-    "category": "Lighting",
-    "price": 24999,
-    "image": "https://www.homedecorcompany.in/cdn/shop/files/S330cf7c7367c42d88393b2a07866b4c8j_jpg.webp?v=1750452341",
-    "description": "Luxury multi-tier crystal ceiling chandelier with gold-finish brass chains.",
-    "specs": [
-      "8-Light Premium Tiered Pendant Chandelier",
-      "Hand-Cut Premium K9 Faceted Crystals",
-      "Polished Electroplated Gold Brass Frame",
-      "Perfect for Foyer, Dining, and Grand Living Room"
-    ]
-  },
-  {
     "id": "lighting-174",
     "name": "Track Light",
     "category": "Lighting",
@@ -2167,20 +1691,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
     ]
   },
   {
-    "id": "bathroom-176",
-    "name": "Shower Panel",
-    "category": "Bathroom",
-    "price": 18999,
-    "image": "https://images-eu.ssl-images-amazon.com/images/I/61NJ2PdaN0L._AC_UL375_SR375,375_.jpg",
-    "description": "Full stainless-steel luxury overhead waterfall body-jets shower panel tower.",
-    "specs": [
-      "Grade 304 Polished Stainless Steel",
-      "4 Jet Functions: Rainfall, Waterfall, Jets, Wand",
-      "8 High-Pressure Adjustable Body Massage Jets",
-      "Digital Temperature Screen Indicator (Hydro-powered)"
-    ]
-  },
-  {
     "id": "bathroom-177",
     "name": "Bathroom Mirror",
     "category": "Bathroom",
@@ -2192,20 +1702,6 @@ export const PERMANENT_PRODUCTS_OVERRIDE: any[] | null = [
       "Touch Button Dimmer with Color memory",
       "Built-In Automated Anti-Fog Demister Pad",
       "Explosion-Proof HD Copper-Free Silver Glass"
-    ]
-  },
-  {
-    "id": "bathroom-178",
-    "name": "Vanity Cabinet",
-    "category": "Bathroom",
-    "price": 15999,
-    "image": "https://m.media-amazon.com/images/I/61sjB7H+CcL._AC_UF894,1000_QL80_.jpg",
-    "description": "Wall-hung waterproof wooden bathroom basin vanity cabinet combo, excluding sink.",
-    "specs": [
-      "Multi-Layer Solid Wood Waterproof Cabinet",
-      "Glossy White Scratch-Resistant Enamels",
-      "2 Hydraulic Drawers with Soft Close Slides",
-      "Spacious Internal Pipe Clearance Cutouts"
     ]
   },
   {
