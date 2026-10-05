@@ -12,19 +12,23 @@ function route(host, path) {
 }
 test('known payment paths keep dev and production separate', () => {
   for (const environment of ['dev', 'production']) {
-    const host = (environment === 'dev' ? 'dev.' : 'www.') + domain;
+    const host = 'www.' + domain;
+    const prefix = environment === 'dev' ? '/pg/dev' : '/pg';
     const api = environment === 'dev' ? 'https://dev.api.letspay.co.in' : 'https://api.letspay.co.in';
-    assert.equal(route(host, '/pg/checkout'), api + '/pg/proxy/' + business + '/checkout');
-    assert.equal(route(host, '/pg/return'), api + '/pg/proxy/' + business + '/return');
-    assert.equal(route(host, '/pg/health'), api + '/api/health');
+    assert.equal(route(host, prefix + '/checkout'), api + '/pg/proxy/' + business + '/checkout');
+    assert.equal(route(host, prefix + '/return'), api + '/pg/proxy/' + business + '/return');
+    assert.equal(route(host, prefix + '/health'), api + '/api/health');
     for (const provider of ['razorpay', 'cashfree'])
-      assert.equal(route(host, '/pg/webhooks/' + provider), api + '/api/webhooks/' + provider + '/payments');
-    assert.equal(route(host, '/pg/unknown'), 'https://api.letspay.co.in/pg/unavailable');
+      assert.equal(route(host, prefix + '/webhooks/' + provider), api + '/api/webhooks/' + provider + '/payments');
+    assert.equal(route(host, prefix + '/unknown'), 'https://api.letspay.co.in/pg/unavailable');
   }
 });
 test('preview/unknown hosts cannot open live checkout', () => {
-  for (const host of ['preview.vercel.app', 'www.' + domain + '.evil.test', domain])
-    assert.equal(route(host, '/pg/checkout'), 'https://api.letspay.co.in/pg/unavailable');
+  for (const host of ['preview.vercel.app', 'www.' + domain + '.evil.test', domain, 'dev.' + domain])
+    for (const prefix of ['/pg', '/pg/dev']) {
+      assert.equal(route(host, prefix + '/checkout'), 'https://api.letspay.co.in/pg/unavailable');
+      assert.equal(route(host, prefix + '/webhooks/razorpay'), 'https://api.letspay.co.in/pg/unavailable');
+    }
   assert.equal(config.redirects, undefined);
 });
 test('payment paths are uncached and precede the website fallback', () => {

@@ -17,51 +17,51 @@
   ],
   "rewrites": [
     {
-      "source": "/pg/checkout",
+      "source": "/pg/dev/checkout",
       "has": [
         {
           "type": "host",
-          "value": "dev\\.mgrowgate\\.com"
+          "value": "www\\.mgrowgate\\.com"
         }
       ],
       "destination": "https://dev.api.letspay.co.in/pg/proxy/ecommerce/checkout"
     },
     {
-      "source": "/pg/return",
+      "source": "/pg/dev/return",
       "has": [
         {
           "type": "host",
-          "value": "dev\\.mgrowgate\\.com"
+          "value": "www\\.mgrowgate\\.com"
         }
       ],
       "destination": "https://dev.api.letspay.co.in/pg/proxy/ecommerce/return"
     },
     {
-      "source": "/pg/health",
+      "source": "/pg/dev/health",
       "has": [
         {
           "type": "host",
-          "value": "dev\\.mgrowgate\\.com"
+          "value": "www\\.mgrowgate\\.com"
         }
       ],
       "destination": "https://dev.api.letspay.co.in/api/health"
     },
     {
-      "source": "/pg/webhooks/razorpay",
+      "source": "/pg/dev/webhooks/razorpay",
       "has": [
         {
           "type": "host",
-          "value": "dev\\.mgrowgate\\.com"
+          "value": "www\\.mgrowgate\\.com"
         }
       ],
       "destination": "https://dev.api.letspay.co.in/api/webhooks/razorpay/payments"
     },
     {
-      "source": "/pg/webhooks/cashfree",
+      "source": "/pg/dev/webhooks/cashfree",
       "has": [
         {
           "type": "host",
-          "value": "dev\\.mgrowgate\\.com"
+          "value": "www\\.mgrowgate\\.com"
         }
       ],
       "destination": "https://dev.api.letspay.co.in/api/webhooks/cashfree/payments"
