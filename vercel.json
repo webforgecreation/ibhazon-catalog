@@ -1,5 +1,128 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "headers": [
+    {
+      "source": "/pg/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        }
+      ]
+    }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/pg/checkout",
+      "has": [
+        {
+          "type": "host",
+          "value": "dev\\.mgrowgate\\.com"
+        }
+      ],
+      "destination": "https://dev.api.letspay.co.in/pg/proxy/ecommerce/checkout"
+    },
+    {
+      "source": "/pg/return",
+      "has": [
+        {
+          "type": "host",
+          "value": "dev\\.mgrowgate\\.com"
+        }
+      ],
+      "destination": "https://dev.api.letspay.co.in/pg/proxy/ecommerce/return"
+    },
+    {
+      "source": "/pg/health",
+      "has": [
+        {
+          "type": "host",
+          "value": "dev\\.mgrowgate\\.com"
+        }
+      ],
+      "destination": "https://dev.api.letspay.co.in/api/health"
+    },
+    {
+      "source": "/pg/webhooks/razorpay",
+      "has": [
+        {
+          "type": "host",
+          "value": "dev\\.mgrowgate\\.com"
+        }
+      ],
+      "destination": "https://dev.api.letspay.co.in/api/webhooks/razorpay/payments"
+    },
+    {
+      "source": "/pg/webhooks/cashfree",
+      "has": [
+        {
+          "type": "host",
+          "value": "dev\\.mgrowgate\\.com"
+        }
+      ],
+      "destination": "https://dev.api.letspay.co.in/api/webhooks/cashfree/payments"
+    },
+    {
+      "source": "/pg/checkout",
+      "has": [
+        {
+          "type": "host",
+          "value": "www\\.mgrowgate\\.com"
+        }
+      ],
+      "destination": "https://api.letspay.co.in/pg/proxy/ecommerce/checkout"
+    },
+    {
+      "source": "/pg/return",
+      "has": [
+        {
+          "type": "host",
+          "value": "www\\.mgrowgate\\.com"
+        }
+      ],
+      "destination": "https://api.letspay.co.in/pg/proxy/ecommerce/return"
+    },
+    {
+      "source": "/pg/health",
+      "has": [
+        {
+          "type": "host",
+          "value": "www\\.mgrowgate\\.com"
+        }
+      ],
+      "destination": "https://api.letspay.co.in/api/health"
+    },
+    {
+      "source": "/pg/webhooks/razorpay",
+      "has": [
+        {
+          "type": "host",
+          "value": "www\\.mgrowgate\\.com"
+        }
+      ],
+      "destination": "https://api.letspay.co.in/api/webhooks/razorpay/payments"
+    },
+    {
+      "source": "/pg/webhooks/cashfree",
+      "has": [
+        {
+          "type": "host",
+          "value": "www\\.mgrowgate\\.com"
+        }
+      ],
+      "destination": "https://api.letspay.co.in/api/webhooks/cashfree/payments"
+    },
+    {
+      "source": "/pg/:path*",
+      "destination": "https://api.letspay.co.in/pg/unavailable"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
